@@ -4,6 +4,7 @@
 can_click = false;
 correct_word = "";
 _engnumlist = []
+level = 1
 inupiaq_words();
 english_words();
 

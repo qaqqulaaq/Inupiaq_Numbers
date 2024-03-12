@@ -1,6 +1,6 @@
 //@Shuffles the answers again
 
-shuffle_answers();
+shuffle_answers(test.level);
 test.can_click = true;
 choice1.right = 0;
 choice2.right = 0;

@@ -26,6 +26,7 @@
     {"name":"shuffleAnswers","order":2,"path":"scripts/shuffleAnswers/shuffleAnswers.yy",},
     {"name":"Words","order":2,"path":"fonts/Words/Words.yy",},
     {"name":"choice1","order":1,"path":"objects/choice1/choice1.yy",},
+    {"name":"loadChoice","order":8,"path":"scripts/loadChoice/loadChoice.yy",},
     {"name":"assembler20","order":1,"path":"scripts/assembler20/assembler20.yy",},
     {"name":"question","order":5,"path":"objects/question/question.yy",},
     {"name":"choice4","order":4,"path":"objects/choice4/choice4.yy",},

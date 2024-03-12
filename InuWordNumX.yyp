@@ -46,6 +46,7 @@
     {"id":{"name":"Words","path":"fonts/Words/Words.yy",},},
     {"id":{"name":"choice1","path":"objects/choice1/choice1.yy",},},
     {"id":{"name":"test","path":"objects/test/test.yy",},},
+    {"id":{"name":"loadChoice","path":"scripts/loadChoice/loadChoice.yy",},},
     {"id":{"name":"assembler10","path":"scripts/assembler10/assembler10.yy",},},
     {"id":{"name":"english_words","path":"scripts/english_words/english_words.yy",},},
     {"id":{"name":"assembler20","path":"scripts/assembler20/assembler20.yy",},},

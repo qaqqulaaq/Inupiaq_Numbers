@@ -1,22 +1,29 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function loadChoice(three, two, one){
+
+function loadChoice(_numlistraw){
 //Loads the first choice based on the english word and sets it as the correct word
 	
-	var _ranword = []
-	var _numlist = [three*irandom(19),two*irandom(19),one*irandom(19)]
-	_ranword[4] = assembler10(_numlist);
-	_ranword[0] = assembler20(_numlist);
+	var _ranword = [];
+//loads up 4 things	
+	while array_length(_ranword) < 4{
+		var _numlist =[];
+		for(var _i = 0; _i<array_length(_numlistraw); _i+=1){
+			if _i % 2 == 0 _numlist[_i] = _numlistraw[_i]*irandom_range(1,3)
+			else _numlist[_i] = _numlistraw[_i]*irandom_range(1,4)
+		}
+		var _flag = false
+		for(var _i = 0; _i<array_length(_ranword); _i+=1){
+			if array_equals(_ranword[_i],_numlist) _flag = true
+		}
+		
+		if _flag == false array_push(_ranword, _numlist)
+	}
 
-//Asks the question based on the english word
+//Stores the English word, then replaces each of the number lists with a word
+	_ranword[4] = assembler10(_ranword[0]);
+	for(var _i = 0; _i < 4; _i +=1){
+		_ranword[_i] = assembler20(_ranword[_i]);
+	}
 
-//Picks random words for the other three items, rerolling as necessary
-	do _ranword[1] = assembler20([0, _numlist[1], irandom(19)]);
-	until _ranword[1] != _ranword[0];
-	do _ranword[2] = assembler20([0, irandom(19), _numlist[2]]);
-	until _ranword[2] != _ranword[0] and _ranword[2] != _ranword[1];
-	do _ranword[3] = assembler20([0, irandom(19), irandom(19)]);
-	until _ranword[3] != _ranword[0] and _ranword[3] != _ranword[1] and _ranword[3] != _ranword[2];
 //Splits all of the words with a line break
 	for(var _i = 0; _i<array_length(_ranword);_i+= 1){
 		var _temp = string_split(_ranword[_i]," ",true);

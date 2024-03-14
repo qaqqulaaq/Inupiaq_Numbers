@@ -1,0 +1,15 @@
+format (three5,three,two5,two,one5,one)
+
+Easiest- pick 1: if one of the fives, pick a random single to go with it.
+Normal- pick 2, from different places in the list
+Hard- pick 3, from different places in the list
+Harder- pick 4, current maximum allowed without adjusting font size
+
+if active, times irandomrange 1-3 for fives, 1-4 for singles
+
+Exceptions for 0,4 and 1,1
+Rule for 5-1. 10-1 and 15-1
+
+Rule for multiples of 20-1 if x,y,0,0
+Rules for multiples of 400-1 if x,y,0,0,0,0
+

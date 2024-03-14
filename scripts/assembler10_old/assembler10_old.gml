@@ -1,12 +1,9 @@
-//Script takes argument, _numlist, as a list that has 6 indices (2000,400,100,20,5,1] and breaks it down to assemble the words in English
-function assembler10(_numlist){
+//Script takes argument, _numlist, as a list and breaks it down to assemble the words in English
+function assembler10_old(_numlist){
 //Sets up the english word by breaking up the base 10 place values
-	var _base10 = _numlist[0]*2000 + _numlist[1]*400 + _numlist[2]*100 + _numlist[3]*20 + _numlist[4]*5 + _numlist[5]
-	var _engnumlist = [_base10 div 1000,(_base10%1000) div 100,((_base10%1000)%100) div 10,((_base10%1000)%100)%10]
+	var _base10 = _numlist[0]*400 + _numlist[1]*20 + _numlist[2]
+	_engnumlist = [_base10 div 1000,(_base10%1000) div 100,((_base10%1000)%100) div 10,((_base10%1000)%100)%10]
 	var _engword = ""
-
-//processes the number list
-
 	if _engnumlist[0] > 0 _engword += test.engword[_engnumlist[0]] + " Thousand "
 	if _engnumlist[1] > 0 _engword += test.engword[_engnumlist[1]] + " Hundred "
 //exceptions for the tens place, teens or finishes with tens place

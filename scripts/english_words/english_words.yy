@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "english_words",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Dictionaries",
-    "path": "folders/Scripts/Dictionaries.yy",
+  "$GMScript":"",
+  "%Name":"english_words",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"english_words",
+  "parent":{
+    "name":"Dictionaries",
+    "path":"folders/Scripts/Dictionaries.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

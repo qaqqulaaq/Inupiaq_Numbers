@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"assembler20",
+  "%Name":"assembler10_old",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"assembler20",
+  "name":"assembler10_old",
   "parent":{
     "name":"Assemblers",
     "path":"folders/Scripts/Assemblers.yy",

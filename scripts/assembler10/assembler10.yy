@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "assembler10",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Assemblers",
-    "path": "folders/Scripts/Assemblers.yy",
+  "$GMScript":"",
+  "%Name":"assembler10",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"assembler10",
+  "parent":{
+    "name":"Assemblers",
+    "path":"folders/Scripts/Assemblers.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

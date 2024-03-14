@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"assembler20",
+  "%Name":"inupiaq_words_old",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"assembler20",
+  "name":"inupiaq_words_old",
   "parent":{
-    "name":"Assemblers",
-    "path":"folders/Scripts/Assemblers.yy",
+    "name":"Dictionaries",
+    "path":"folders/Scripts/Dictionaries.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

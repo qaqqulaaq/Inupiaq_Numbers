@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "inupiaq_words",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Dictionaries",
-    "path": "folders/Scripts/Dictionaries.yy",
+  "$GMScript":"",
+  "%Name":"inupiaq_words",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"inupiaq_words",
+  "parent":{
+    "name":"Dictionaries",
+    "path":"folders/Scripts/Dictionaries.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -10,12 +10,26 @@ function loadChoice(_numlistraw){
 			if _i % 2 == 0 _numlist[_i] = _numlistraw[_i]*irandom_range(1,3)
 			else _numlist[_i] = _numlistraw[_i]*irandom_range(1,4)
 		}
+		
 		var _flag = false
-		for(var _i = 0; _i<array_length(_ranword); _i+=1){
-			if array_equals(_ranword[_i],_numlist) _flag = true
+		if array_length(_ranword) > 0{
+			for(var _i = 0; _i<array_length(_ranword); _i+=1){
+				if array_equals(_ranword[_i],_numlist) _flag = true
+			}
+		}
+		//BUG! Seems to not filter out anything ending in -gutailaq
+		else if array_length(test.prevword) > 0{
+			for(var _i = 0; _i < array_length(test.prevword); _i+=1){
+				if array_equals(_numlist,test.prevword[_i]) {
+					_flag = true
+				}
+			}
 		}
 		
-		if _flag == false array_push(_ranword, _numlist)
+		if _flag == false {
+			array_push(_ranword, _numlist)
+			if array_length(_ranword) == 1 array_push(test.prevword, _numlist)
+		}
 	}
 
 //Stores the English word, then replaces each of the number lists with a word

@@ -3,8 +3,8 @@
 
 can_click = false;
 correct_word = "";
-_engnumlist = []
-level = 2
+level = 2;
+prevword = [];
 inupiaq_words();
 english_words();
 

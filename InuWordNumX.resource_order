@@ -20,6 +20,7 @@
   "ResourceOrderSettings":[
     {"name":"InupiaqNumbers","order":1,"path":"fonts/InupiaqNumbers/InupiaqNumbers.yy",},
     {"name":"Words","order":2,"path":"fonts/Words/Words.yy",},
+    {"name":"PING!","order":1,"path":"notes/PING!/PING!.yy",},
     {"name":"choice1","order":1,"path":"objects/choice1/choice1.yy",},
     {"name":"choice2","order":2,"path":"objects/choice2/choice2.yy",},
     {"name":"choice3","order":3,"path":"objects/choice3/choice3.yy",},

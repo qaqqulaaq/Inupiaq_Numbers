@@ -54,6 +54,7 @@
     {"id":{"name":"loadChoice","path":"scripts/loadChoice/loadChoice.yy",},},
     {"id":{"name":"shuffleAnswers","path":"scripts/shuffleAnswers/shuffleAnswers.yy",},},
     {"id":{"name":"choice_box","path":"sprites/choice_box/choice_box.yy",},},
+    {"id":{"name":"choice_press","path":"sprites/choice_press/choice_press.yy",},},
     {"id":{"name":"spr_question_box","path":"sprites/spr_question_box/spr_question_box.yy",},},
     {"id":{"name":"Timeline1","path":"timelines/Timeline1/Timeline1.yy",},},
   ],

@@ -23,6 +23,7 @@ function loadChoice(_numlistraw){
 			if _i % 2 == 0 _numlist[_i] = _numlistraw[_i]*irandom_range(0,3)
 			else _numlist[_i] = _numlistraw[_i]*irandom_range(0,4)
 		};
+
 //creates a flag to discard duplicate numbers	
 		var _flag = false;
 //checks to see if the list of choices already includes a word

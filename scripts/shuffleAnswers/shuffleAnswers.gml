@@ -9,11 +9,19 @@ function shuffle_answers(level)
 //Picks a random number for the first word
 	switch(level)
 	{
-		case 1: _numlist = loadChoice([0,0,0,0,0,1]); break;
+		case 1: var _roll = irandom(1); 
+				_numlist = loadChoice([0,0,0,0,_roll,abs(_roll - 1)]); 
+				break;
+				
 		case 2: _numlist = loadChoice([0,0,0,0,1,1]); break;
+		
 		case 3: _numlist = loadChoice([0,0,1,1,0,0]); break;
-		case 4: _numlist = loadChoice([0,0,0,1,0,1]); break;
-		case 5: _numlist = loadChoice([0,0,1,0,1,0]); break;
+		
+		case 4: var _roll = irandom(1); 
+				_numlist = loadChoice([0,0,_roll,_roll,abs(_roll - 1),abs(_roll - 1)]); 
+				break;
+		
+		case 5: _numlist = loadChoice([0,0,1,1,1,1]); break;
 		case 6: _numlist = loadChoice([0,1,0,1,0,1]); break;
 		case 7: _numlist = loadChoice([1,0,1,0,1,0]); break;
 	}

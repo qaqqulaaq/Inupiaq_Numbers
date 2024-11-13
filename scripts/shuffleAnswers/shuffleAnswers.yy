@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"shuffleAnswers",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Words",
+    "path":"folders/Scripts/Words.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

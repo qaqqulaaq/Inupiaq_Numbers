@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"inupiaq_numbers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"inupiaq_numbers",
+  "parent":{
+    "name":"Dictionaries",
+    "path":"folders/Scripts/Words/Dictionaries.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

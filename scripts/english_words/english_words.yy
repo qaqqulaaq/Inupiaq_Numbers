@@ -6,7 +6,7 @@
   "name":"english_words",
   "parent":{
     "name":"Dictionaries",
-    "path":"folders/Scripts/Dictionaries.yy",
+    "path":"folders/Scripts/Words/Dictionaries.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,8 +6,8 @@
   "name":"choice3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"language_room",
+    "path":"folders/Objects/language_room.yy",
   },
   "parentObjectId":{
     "name":"choice1",

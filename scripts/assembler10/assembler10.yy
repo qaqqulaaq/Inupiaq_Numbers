@@ -6,7 +6,7 @@
   "name":"assembler10",
   "parent":{
     "name":"Assemblers",
-    "path":"folders/Scripts/Assemblers.yy",
+    "path":"folders/Scripts/Words/Assemblers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

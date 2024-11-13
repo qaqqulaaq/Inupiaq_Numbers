@@ -5,8 +5,10 @@ if test.can_click == true{
 	}
 	else {
 		right = 2;
+		with choice1 if say == test.correct_word right = 1;
 		question.say = "Naumi: \n" + test.correct_word
-		array_pop(test.prevword) 
+		array_pop(test.prevword)
+		
 	}
 
 	with test{

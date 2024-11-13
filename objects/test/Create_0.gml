@@ -4,7 +4,7 @@
 can_click = false;
 correct_word = "";
 level = 1;
-prevword = array_create(0);
+prevword = [];
 inupiaq_words();
 english_words();
 

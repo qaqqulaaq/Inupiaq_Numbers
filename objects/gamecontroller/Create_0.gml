@@ -5,15 +5,20 @@ linex = [];
 liney = [];
 
 //points = 0;
-clear_timer = 5;
+clear_timer = 1;
 _ansarray = [];
 level = 1;
-array1 = [];
-array2 = [];
-
-string1 = "";
-string2 = "";
-
+setnumber = 0;
 totalAmount = 0;
 
-setnumber = 0;
+if room = number_operations{
+	array1 = [];
+	array2 = [];
+
+	string1 = "";
+	string2 = "";
+}
+
+if room = number_conversions{
+	prev_array = [];
+}

@@ -6,8 +6,14 @@ if clear_timer <= 0{
 	clear_timer = 180;
 
 	
-	//if setnumber = totalAmount points += 1;
-	if setnumber != totalAmount{
+	if setnumber = totalAmount {
+		if array_length(prev_array) > 15 array_delete(prev_array,0,3);
+		array_push(prev_array,totalAmount);
+		//points += 1;
+	}	
+		
+	
+	else{
 		_ansarray = [totalAmount div 160000, (totalAmount % 160000) div 8000, (totalAmount % 8000) div 400, (totalAmount % 400) div 20, (totalAmount % 20)]
 	
 		if _ansarray[0] != numbox4.number{

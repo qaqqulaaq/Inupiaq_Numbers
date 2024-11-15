@@ -1,1 +1,1 @@
-room_goto(numbers);
+room_goto(language);

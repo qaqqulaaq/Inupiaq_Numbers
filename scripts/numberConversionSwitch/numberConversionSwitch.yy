@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"numberConversionSwitch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"numberConversionSwitch",
+  "parent":{
+    "name":"Numbers",
+    "path":"folders/Scripts/Numbers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

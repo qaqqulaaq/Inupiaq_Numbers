@@ -5,8 +5,6 @@ if clear_timer > 0 {
 	clear_timer -= 1;
 	if clear_timer <= 0{
 		if room = number_operations{
-			linex = [];
-			liney = [];
 		
 			array1 = random_num_generator(level);
 			array2 = random_num_generator(level);
@@ -47,6 +45,8 @@ if clear_timer > 0 {
 		with numbox {
 		number = 0;
 		correct = 0;
+		linex = [];
+		liney = [];
 		}
 		
 		

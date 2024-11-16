@@ -16,6 +16,7 @@
     {"name":"inst_1FC1C78D","path":"rooms/number_operations/number_operations.yy",},
     {"name":"inst_DBA33AA","path":"rooms/number_operations/number_operations.yy",},
     {"name":"inst_2B15C1C5","path":"rooms/number_operations/number_operations.yy",},
+    {"name":"inst_41537C17","path":"rooms/number_operations/number_operations.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -30,6 +31,7 @@
         {"$GMRInstance":"","%Name":"inst_67892DF8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_67892DF8","objectId":{"name":"nextbox","path":"objects/nextbox/nextbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":864.0,"y":608.0,},
         {"$GMRInstance":"","%Name":"inst_1FC1C78D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FC1C78D","objectId":{"name":"rightarrow","path":"objects/rightarrow/rightarrow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-0.45067397,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":32.0,},
         {"$GMRInstance":"","%Name":"inst_DBA33AA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_DBA33AA","objectId":{"name":"leftarrow","path":"objects/leftarrow/leftarrow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":32.0,},
+        {"$GMRInstance":"","%Name":"inst_41537C17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41537C17","objectId":{"name":"eraser","path":"objects/eraser/eraser.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":864.0,"y":544.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

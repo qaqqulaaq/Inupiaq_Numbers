@@ -6,7 +6,7 @@ if clear_timer <= 0{
 	clear_timer = 180;
 
 	
-	if setnumber = totalAmount {
+	if setnumber = totalAmount and room == number_conversions {
 		if array_length(prev_array) > 15 array_delete(prev_array,0,3);
 		array_push(prev_array,totalAmount);
 		//points += 1;
@@ -40,3 +40,5 @@ if clear_timer <= 0{
 	
 	}
 }
+
+else clear_timer = 1

@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"numbox4",
+  "%Name":"eraser",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"numbox4",
+  "name":"eraser",
   "overriddenProperties":[],
   "parent":{
     "name":"numbers_room",
     "path":"folders/Objects/numbers_room.yy",
   },
-  "parentObjectId":{
-    "name":"numbox",
-    "path":"objects/numbox/numbox.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_numbox",
-    "path":"sprites/spr_numbox/spr_numbox.yy",
+    "name":"Sprite10",
+    "path":"sprites/Sprite10/Sprite10.yy",
   },
   "spriteMaskId":null,
   "visible":true,

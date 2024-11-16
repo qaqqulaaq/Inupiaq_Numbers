@@ -2,7 +2,12 @@
 // You can write your code in this editor
 
 
-if mouse_y < y+72{
+if object_get_name(object_index) = "numbox4" and room = number_operations and (operation.mathop == "plus" or operation.mathop == "minus"){
+	if number == 0 number = 1
+	else number = 0
+}
+
+else if mouse_y < y+72{
 	if number < 15 number += 5;
 	else number = 0
 }

@@ -17,4 +17,9 @@ else {
 	else number = 19
 }
 
-gamecontroller.setnumber = numbox4.number*160000 + numbox3.number*8000 + numbox2.number*400+numbox1.number*20+numbox0.number
+gamecontroller.setnumber = 0 
+if instance_exists(numbox4) gamecontroller.setnumber += numbox4.number*160000;
+if instance_exists(numbox3) gamecontroller.setnumber += numbox3.number*8000;
+if instance_exists(numbox2) gamecontroller.setnumber += numbox2.number*400;
+if instance_exists(numbox1) gamecontroller.setnumber += numbox1.number*20;
+gamecontroller.setnumber += numbox0.number;

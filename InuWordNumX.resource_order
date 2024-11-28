@@ -62,6 +62,7 @@
     {"name":"nextWord","order":9,"path":"scripts/nextWord/nextWord.yy",},
     {"name":"numberConversionSwitch","order":4,"path":"scripts/numberConversionSwitch/numberConversionSwitch.yy",},
     {"name":"random_num_generator","order":1,"path":"scripts/random_num_generator/random_num_generator.yy",},
+    {"name":"box_create","order":2,"path":"scripts/box_create/box_create.yy",},
     {"name":"wordBuilder","order":10,"path":"scripts/wordBuilder/wordBuilder.yy",},
     {"name":"choice_press","order":2,"path":"sprites/choice_press/choice_press.yy",},
     {"name":"spr_arrow","order":7,"path":"sprites/spr_arrow/spr_arrow.yy",},

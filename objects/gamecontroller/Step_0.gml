@@ -6,13 +6,13 @@ if clear_timer > 0 {
 	if clear_timer <= 0{
 		if room = number_operations{
 		
-			array1 = random_num_generator(level);
-			array2 = random_num_generator(level);
+			var _array1 = random_num_generator(level);
+			var _array2 = random_num_generator(level);
 
 
 
-			var _amount1 = array1[0]*8000 + array1[1]*400+array1[2]*20+array1[3];
-			var _amount2 = array2[0]*8000 + array2[1]*400+array2[2]*20+array2[3];
+			var _amount1 = _array1[0]*8000 + _array1[1]*400+_array1[2]*20+_array1[3];
+			var _amount2 = _array2[0]*8000 + _array2[1]*400+_array2[2]*20+_array2[3];
 
 			if _amount1 < _amount2 {
 			
@@ -21,16 +21,16 @@ if clear_timer > 0 {
 				_amount1 = _amount2;
 				_amount2 = _tempamount;
 			
-				_temparray = array1
-				array1 = array2
-				array2 = _temparray
+				_temparray = _array1
+				_array1 = _array2
+				_array2 = _temparray
 			
 			}
 
 			if operation.mathop = "plus" totalAmount = _amount1+_amount2;
 			else totalAmount = _amount1 - _amount2;
-			string1 = num_array_to_string(array1);
-			string2 = num_array_to_string(array2);
+			string1 = num_array_to_string(_array1);
+			string2 = num_array_to_string(_array2);
 			
 		
 
@@ -42,11 +42,11 @@ if clear_timer > 0 {
 		}
 		
 		setnumber = 0;
+		linex = [];
+		liney = [];
 		with numbox {
 		number = 0;
 		correct = 0;
-		linex = [];
-		liney = [];
 		}
 		
 		

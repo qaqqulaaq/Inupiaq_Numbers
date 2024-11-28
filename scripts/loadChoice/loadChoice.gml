@@ -103,6 +103,5 @@ function loadChoice(_numlistraw, _maxno){
 		}
 		_ranword[_i] += array_shift(_temp);
 	};
-	show_message(string(test.prevword))
 	return _ranword;
 }

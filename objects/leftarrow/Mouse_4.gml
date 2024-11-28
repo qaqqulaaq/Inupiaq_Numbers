@@ -4,6 +4,7 @@
 if room == number_operations or room == number_conversions with gamecontroller{
 	if level > 1 {
 		level -= 1;
+		box_create(level)
 		clear_timer = 1;
 	}
 }

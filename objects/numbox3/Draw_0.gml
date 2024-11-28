@@ -3,5 +3,8 @@
 
 event_inherited();
 
-if number == 0 and numbox4.number > 0 draw_text(x-20,y+20,chr(58803));
-else draw_text(x-20,y+20,chr(58783+number));
+var _sum = 0;
+if instance_exists(numbox4) _sum += numbox4.number
+
+if number == 0 and _sum > 0 draw_text(x-1,y+20,chr(58803));
+else draw_text(x,y+20,chr(58783+number));

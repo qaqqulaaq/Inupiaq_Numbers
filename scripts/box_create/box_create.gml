@@ -1,0 +1,86 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function box_create(_level){
+	instance_destroy(numbox);
+	
+	var _x = 448
+	var _y = 448
+	
+	if room == number_operations switch _level{
+		case 1: 
+			instance_create_layer(_x    , _y, "Instances",numbox0);
+			operation.x = 328
+			break;
+			
+		case 2:
+		case 3:
+		case 4:
+			instance_create_layer(_x-80 , _y, "Instances",numbox1);
+			instance_create_layer(_x+80 , _y, "Instances",numbox0);
+			if _level == 2 operation.x = 368
+			else operation.x = 248
+			break;
+		
+		case 5:
+			instance_create_layer(_x-160, _y, "Instances",numbox2);
+			instance_create_layer(_x    , _y, "Instances",numbox1);
+			instance_create_layer(_x+160, _y, "Instances",numbox0);
+			operation.x = 288
+			break;
+			
+		case 6:
+			instance_create_layer(_x-240, _y, "Instances",numbox3);
+			instance_create_layer(_x-80 , _y, "Instances",numbox2);
+			instance_create_layer(_x+80 , _y, "Instances",numbox1);
+			instance_create_layer(_x+240, _y, "Instances",numbox0);
+			operation.x = 208
+			break;
+			
+		case 7:
+			instance_create_layer(_x-320, _y, "Instances",numbox2);
+			instance_create_layer(_x-160, _y, "Instances",numbox2);
+			instance_create_layer(_x    , _y, "Instances",numbox1);
+			instance_create_layer(_x+160, _y, "Instances",numbox0);
+			instance_create_layer(_x+320, _y, "Instances",numbox2);
+			operation.x = 128
+			break;
+	}
+	
+	else if room == number_conversions switch _level{
+		case 1: 
+			instance_create_layer(_x    , _y, "Instances",numbox0);
+			break;
+			
+		case 2:
+		case 3:
+			instance_create_layer(_x-80 , _y, "Instances",numbox1);
+			instance_create_layer(_x+80 , _y, "Instances",numbox0);
+			break;
+		
+		case 4:
+		case 5:
+			instance_create_layer(_x-160, _y, "Instances",numbox2);
+			instance_create_layer(_x    , _y, "Instances",numbox1);
+			instance_create_layer(_x+160, _y, "Instances",numbox0);
+			break;
+			
+		case 6:
+		case 7:
+			instance_create_layer(_x-240, _y, "Instances",numbox3);
+			instance_create_layer(_x-80 , _y, "Instances",numbox2);
+			instance_create_layer(_x+80 , _y, "Instances",numbox1);
+			instance_create_layer(_x+240, _y, "Instances",numbox0);
+			break;
+			
+		case 8:
+		case 9:
+		case 10:
+			instance_create_layer(_x-320, _y, "Instances",numbox4);
+			instance_create_layer(_x-160, _y, "Instances",numbox3);
+			instance_create_layer(_x    , _y, "Instances",numbox2);
+			instance_create_layer(_x+160, _y, "Instances",numbox1);
+			instance_create_layer(_x+320, _y, "Instances",numbox0);
+			break;
+	}
+	
+}

@@ -23,7 +23,7 @@
   ],
   "name":"spr_numbox",
   "nineSlice":null,
-  "origin":2,
+  "origin":1,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":150,
+    "xorigin":75,
     "yorigin":0,
   },
   "swatchColours":null,

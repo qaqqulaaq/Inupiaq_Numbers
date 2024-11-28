@@ -3,14 +3,17 @@
 function random_num_generator(_level){
 	var _num_array = [];
 	var _string = ""
-	switch(_level){
-		case 1: _num_array = [0, 0, 0, 0, 0, 0, irandom(3), irandom(4)];break;
-		case 2: _num_array = [0, 0, 0, 0, 0, irandom(4), irandom(3), irandom(4)];break;
-		case 3: _num_array = [0, 0, 0, 0, irandom(1), irandom(4), irandom(3), irandom(4)];break;
-		case 4: _num_array = [0, 0, 0, 0, irandom(3), irandom(4), irandom(3), irandom(4)];break;
-		case 5: _num_array = [0, 0, irandom(3), irandom(4), irandom(3), irandom(4), irandom(3), irandom(4)];break;
-		case 6: _num_array = [irandom(3), irandom(4), irandom(3), irandom(4), irandom(3), irandom(4), irandom(3), irandom(4)];break;
+	do switch(_level){
+		case 1: _num_array = [0, 0, 0, 0, 0, 0, irandom(1), irandom(4)];break;
+		case 2: _num_array = [0, 0, 0, 0, 0, 0, irandom(3), irandom(4)];break;
+		case 3: _num_array = [0, 0, 0, 0, 0, irandom(4), irandom(3), irandom(4)];break;
+		case 4: _num_array = [0, 0, 0, 0, irandom(1), irandom(4), irandom(3), irandom(4)];break;
+		case 5: _num_array = [0, 0, 0, 0, irandom(3), irandom(4), irandom(3), irandom(4)];break;
+		case 6: _num_array = [0, 0, irandom(3), irandom(4), irandom(3), irandom(4), irandom(3), irandom(4)];break;
+		case 7: _num_array = [irandom(3), irandom(4), irandom(3), irandom(4), irandom(3), irandom(4), irandom(3), irandom(4)];break;
 	};
+	
+	until !(array_equals(_num_array,[0,0,0,0,0,0,0,0]));
 	
 	return [_num_array[0]*5 + _num_array[1],
 			_num_array[2]*5 + _num_array[3],

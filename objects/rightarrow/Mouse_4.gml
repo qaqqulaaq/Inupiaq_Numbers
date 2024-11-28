@@ -17,14 +17,21 @@ else if room = number_conversions with gamecontroller{
 }
 
 
-else if room = language with test{
+else if room = vocab_multichoice with test{
 	if level < 7 and can_click == true {
 		level += 1;
 		shuffle_answers(level);
+		test.prevword = []
 	}
 }
 
 
-
+else if room = vocab_wordbuild with test{
+	if level < 8 and can_click == true {
+		level += 1;
+		shuffle_answers(level);
+		test.prevword = []
+	}
+}
 
 

@@ -13,7 +13,6 @@ if test.can_click == true{
 
 	with test{
 		can_click = false;
-		timeline_index = Timeline1;
-		timeline_running = true;
+		clear_timer = 180;
 	};
 };

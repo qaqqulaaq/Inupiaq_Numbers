@@ -10,8 +10,8 @@
   "name":"choice_numberop",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"main_menu_room",
+    "path":"folders/Objects/main_menu_room.yy",
   },
   "parentObjectId":null,
   "persistent":false,

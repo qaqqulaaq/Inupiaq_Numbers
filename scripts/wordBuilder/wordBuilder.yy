@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"wordBuilder",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"wordBuilder",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

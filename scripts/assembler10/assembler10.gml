@@ -7,8 +7,8 @@ function assembler10(_numlist){
 
 //processes the number list
 
-	if _engnumlist[0] > 0 _engword += test.engword[_engnumlist[0]] + " Thousand "
-	if _engnumlist[1] > 0 _engword += test.engword[_engnumlist[1]] + " Hundred "
+	if _engnumlist[0] > 0 _engword += test.engword[_engnumlist[0]] + " Thousand\n"
+	if _engnumlist[1] > 0 _engword += test.engword[_engnumlist[1]] + " Hundred\n"
 //exceptions for the tens place, teens or finishes with tens place
 	if _engnumlist[2] == 1 _engword += test.engwordt[_engnumlist[3]]
 	else if _engnumlist[2] > 1 and _engnumlist[3] == 0 _engword += test.engword10[_engnumlist[2]]

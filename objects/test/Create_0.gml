@@ -8,7 +8,10 @@ prevword = [];
 inupiaq_words();
 english_words();
 
-timeline_index = Timeline1;
-timeline_running = true;
+clear_timer = 1;
 
-testfont = irandom(399)
+if room = vocab_wordbuild {
+	word_array = [];
+	display_text="";
+	wordprogress = 0;
+}

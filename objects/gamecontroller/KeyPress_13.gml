@@ -1,9 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Progresses Game
 
-if clear_timer <= 0{
-	clear_timer = 180;
-	can_click = false;
+if not answered{
+	
+	if  room != vocab_multichoice answered = true
+	
 	switch room {
 		
 		case number_conversions:
@@ -75,4 +75,6 @@ if clear_timer <= 0{
 	}
 }
 
-else clear_timer = 1
+else {
+	reset()
+}

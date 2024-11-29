@@ -2,11 +2,11 @@
 // You can write your code in this editor
 
 //shared variables
-clear_timer = 1;
+alarm[0] = 1;
 level = 1;
 correct_word = "";
-can_click = false;
 prev_array = [];
+answered = false
 
 switch room {
 	//number specific variables

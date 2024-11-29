@@ -1,4 +1,4 @@
-
+///@description Draws everything
 
 //Sets to white, center and top by default
 draw_set_font(EngWords);
@@ -13,7 +13,7 @@ else draw_text(448,16,"R");
 switch room{
 	
 	case number_operations:
-		if clear_timer > 0{
+		if answered{
 			if setnumber == totalAmount draw_text(150,20,"ARRIGAA!");
 			else draw_text(120,20,"Naumi");
 		}
@@ -40,10 +40,6 @@ switch room{
 		//draws the word depending on the answer
 		break;
 		
-	case vocab_multichoice:
-		//***verify that can_click is not necessary for this***
-		if clear_timer > 0 draw_text(450,337,(ceil((clear_timer)/60)));
-		break;
 		
 	case vocab_wordbuild:
 		draw_set_font(Words);

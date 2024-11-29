@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Deletes Word
 
 if room = vocab_wordbuild{
 	if array_length(word_array) > 0 {

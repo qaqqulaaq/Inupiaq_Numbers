@@ -1,4 +1,4 @@
-if gamecontroller.can_click == true and mouse_check_button(mb_left) and position_meeting(mouse_x,mouse_y,id){
+if not gamecontroller.answered and mouse_check_button(mb_left) and position_meeting(mouse_x,mouse_y,id){
 	draw_sprite(choice_press,0,x,y)
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);

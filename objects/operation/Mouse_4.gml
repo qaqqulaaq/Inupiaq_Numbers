@@ -4,7 +4,7 @@
 if mathop == "plus" mathop = "minus";
 else mathop = "plus" ;
 
-gamecontroller.clear_timer = 1
+reset();
 
 
 

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"reset",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"reset",
+  "parent":{
+    "name":"Controller",
+    "path":"folders/Scripts/Controller.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

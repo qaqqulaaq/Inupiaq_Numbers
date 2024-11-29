@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Main Menu
 
 room_goto(main_menu);
 

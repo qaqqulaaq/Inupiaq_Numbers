@@ -1,4 +1,4 @@
-if gamecontroller.can_click == true{
+if not gamecontroller.answered{
 	if say == gamecontroller.correct_word {
 		right = 1;
 		question.say = "Aarigaa!"
@@ -12,7 +12,8 @@ if gamecontroller.can_click == true{
 	}
 
 	with gamecontroller{
-		can_click = false;
-		clear_timer = 180;
+		answered = true;
 	};
+	
+	instance_activate_object(nextbox);
 };

@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description User Eraser
 
 if room == number_conversions or room == number_operations{
 	if mouse_x > 180 and mouse_y < 420{

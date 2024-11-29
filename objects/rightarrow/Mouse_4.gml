@@ -13,10 +13,10 @@ switch room{
 	default: break;
 }
 
-if level < _maxlevel with gamecontroller{
+with gamecontroller if level < _maxlevel {
 	level += 1;
-	clear_timer = 1;
 	prev_array = [];
 	if _box = true box_create(level);
+	reset();
 	
 }

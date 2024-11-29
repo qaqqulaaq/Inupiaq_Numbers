@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//Returns a random number that is used for the Number Conversion Mode.
 function numberConversionSwitch(_level){
 		switch _level{
 		case 1: return irandom(19); 

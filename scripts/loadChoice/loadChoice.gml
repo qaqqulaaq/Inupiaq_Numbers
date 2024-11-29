@@ -2,32 +2,31 @@
 function loadChoice(_numlistraw, _maxno){
 
 	var _ranword = array_create(0);
-	//loads an appropriate number of things	
-	var _length = 0;
+	//sets a variable to make sure the script loads an appropriate number of things	
+	var _length;
 	if room = vocab_multichoice _length = 4;
 	else _length = 1;
 	
-	
-	
+//////////Special case for level 1//////////
 	if array_equals(_numlistraw,[0,0,0,0,0,0]){
-		
-		
+	//Sets up a list of words for 0-6, 10 and 15
 		var _word_list = [[0,0,0,0,0,0],[0,0,0,0,0,1],[0,0,0,0,0,2],[0,0,0,0,0,3],[0,0,0,0,0,4],[0,0,0,0,1,0],[0,0,0,0,1,1],[0,0,0,0,2,0],[0,0,0,0,3,0]];
+	//Removes zero from the list of choices if the room is wordbuild
 		if room = vocab_wordbuild array_shift(_word_list);
-		
-		if array_length(test.prevword) == array_length(_word_list) test.prevword = []
-		
+	//Resets the previous word array once all words have been used
+		if array_length(gamecontroller.prev_array) == array_length(_word_list) gamecontroller.prev_array = [];
+	//Keeps trying to add a word that is not on the list. Probably should find a more efficient method to this later
 		while array_length(_ranword) == 0{
 			array_push(_ranword, _word_list[irandom(array_length(_word_list)-1)])
-			for (var _i = 0; _i < array_length(test.prevword); _i++) {
-				if array_equals(_ranword[0],test.prevword[_i]) {
+			for (var _i = 0; _i < array_length(gamecontroller.prev_array); _i++) {
+				if array_equals(_ranword[0],gamecontroller.prev_array[_i]) {
 					array_pop(_ranword);
 					break;
 				}
 			}
 		}
-		array_push(test.prevword,_ranword[0])
-		
+		array_push(gamecontroller.prev_array,_ranword[0]);
+	//Adds extra words to the list in multichoice mode
 		while array_length(_ranword) < _length{
 			array_push(_ranword, _word_list[irandom(array_length(_word_list)-1)])
 			for (var _i = 0; _i < array_length(_ranword)-1; _i++){
@@ -36,13 +35,15 @@ function loadChoice(_numlistraw, _maxno){
 				}
 			}
 		}
-		
 	}
-
+	
+/////////all other levels follow this code//////
 	else {
-//Clear prevword list if no numbers left
-		if array_length(test.prevword) >= _maxno {
-			array_delete(test.prevword,0,array_length(test.prevword)- 1)
+	//Clear prev_array list if no numbers left. Uses Max Offset if in wordbuild to account for the lack of 0
+		if array_length(gamecontroller.prev_array) >= _maxno {
+			var _maxoff = 0;
+			if room = vocab_wordbuild _maxoff = 1;
+			array_delete(gamecontroller.prev_array,0,array_length(gamecontroller.prev_array) - _maxoff);;
 		}
 	
 
@@ -51,8 +52,8 @@ function loadChoice(_numlistraw, _maxno){
 			var _numlist =[];
 	//takes the raw number list and assigns random words based on it, even numbers are five and odd are one
 			for(var _i = 0; _i<array_length(_numlistraw); _i+=1){
-				if _i % 2 == 0 _numlist[_i] = _numlistraw[_i]*irandom_range(0,3)
-				else _numlist[_i] = _numlistraw[_i]*irandom_range(0,4)
+				if _i % 2 == 0 _numlist[_i] = _numlistraw[_i]*irandom_range(0,3);
+				else _numlist[_i] = _numlistraw[_i]*irandom_range(0,4);
 			};
 
 	//creates a flag to discard duplicate numbers	
@@ -61,16 +62,16 @@ function loadChoice(_numlistraw, _maxno){
 		
 			if array_length(_ranword) > 0{
 				for(var _i = 0; _i<array_length(_ranword); _i+=1){
-					if array_equals(_ranword[_i],_numlist) _flag = true
+					if array_equals(_ranword[_i],_numlist) _flag = true;
 				};
 			};
 			//Checks to see of the chosen number was already answered
 			//BUG! Seems to not filter out anything ending in -gutailaq
 			if array_length(_ranword) == 0 and room = vocab_wordbuild and array_equals(_numlist,[0,0,0,0,0,0]) _flag = true;
 		
-			if array_length(test.prevword) > 0 and array_length(_ranword) == 0{
-				for(var _i = 0; _i < array_length(test.prevword); _i+=1){
-					if array_equals(_numlist,test.prevword[_i]) {
+			if array_length(gamecontroller.prev_array) > 0 and array_length(_ranword) == 0{
+				for(var _i = 0; _i < array_length(gamecontroller.prev_array); _i+=1){
+					if array_equals(_numlist,gamecontroller.prev_array[_i]) {
 						_flag = true;
 					};
 				};
@@ -78,7 +79,7 @@ function loadChoice(_numlistraw, _maxno){
 		
 			if _flag == false {
 				if array_length(_ranword) == 0 {
-					array_push(test.prevword, _numlist)
+					array_push(gamecontroller.prev_array, _numlist);
 				}
 				array_push(_ranword, _numlist);
 			};

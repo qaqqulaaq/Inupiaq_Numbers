@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"wordBuilder",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Assemblers",
+    "path":"folders/Scripts/Words/Assemblers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

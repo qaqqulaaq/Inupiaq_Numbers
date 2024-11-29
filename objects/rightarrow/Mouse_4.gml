@@ -1,39 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if room = number_operations with gamecontroller{
-	if level < 7 {
-		level += 1;
-		box_create(level);
-		clear_timer = 1;
-	}
+
+var _maxlevel;
+var _box;
+
+switch room{
+	case number_operations : _maxlevel = 7 ; _box = true ; break;
+	case number_conversions: _maxlevel = 10; _box = true ; break;
+	case vocab_multichoice : _maxlevel = 7 ; _box = false; break;
+	case vocab_wordbuild   : _maxlevel = 9 ; _box = false; break;
+	default: break;
 }
 
-
-else if room = number_conversions with gamecontroller{
-	if level < 10 {
-		level += 1;
-		box_create(level);
-		clear_timer = 1;
-	}
+if level < _maxlevel with gamecontroller{
+	level += 1;
+	clear_timer = 1;
+	prev_array = [];
+	if _box = true box_create(level);
+	
 }
-
-
-else if room = vocab_multichoice with test{
-	if level < 7 and can_click == true {
-		level += 1;
-		clear_timer = 1;
-		test.prevword = []
-	}
-}
-
-
-else if room = vocab_wordbuild with test{
-	if level < 8 and can_click == true {
-		level += 1;
-		clear_timer = 1;
-		test.prevword = []
-	}
-}
-
-

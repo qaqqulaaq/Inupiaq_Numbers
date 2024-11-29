@@ -22,28 +22,28 @@ function assembler20(_rawnumlist){
 			_oneless = true;
 		};
 		//2000s
-		if _numlist[0] > 0 _inuword += test.word5[_numlist[0]] + suff400;
+		if _numlist[0] > 0 _inuword += gamecontroller.word5[_numlist[0]] + suff400;
 		//400s
-		if _numlist[1] > 1 _inuword += test.word[_numlist[1]] + suff400;
+		if _numlist[1] > 1 _inuword += gamecontroller.word[_numlist[1]] + suff400;
 		else if _numlist[1] == 1 _inuword += word400;
 		//100s
-		if _numlist[2] > 0 _inuword += test.word5[_numlist[2]] + suff20;
+		if _numlist[2] > 0 _inuword += gamecontroller.word5[_numlist[2]] + suff20;
 		//20s
-		if _numlist[3] > 1 _inuword += test.word[_numlist[3]] + suff20;
-		else if _numlist[3] == 1 _inuword += test.word20;
+		if _numlist[3] > 1 _inuword += gamecontroller.word[_numlist[3]] + suff20;
+		else if _numlist[3] == 1 _inuword += gamecontroller.word20;
 		
 		//exceptions abound!
 		if _numlist[4] == 2 and _numlist[5] == 0 and _oneless == true {
-			_inuword += test.word9;
+			_inuword += gamecontroller.word9;
 			_oneless = false;
 		}
 		
-		else if _numlist[4] == 1 and _numlist[5] == 1 _inuword += test.word6
+		else if _numlist[4] == 1 and _numlist[5] == 1 _inuword += gamecontroller.word6
 		else {
-			if _numlist[4] == 3 _inuword += test.word5[_numlist[4]] + "q ";
-			else if _numlist[4] > 0 _inuword += test.word5[_numlist[4]] + "t ";
+			if _numlist[4] == 3 _inuword += gamecontroller.word5[_numlist[4]] + "q ";
+			else if _numlist[4] > 0 _inuword += gamecontroller.word5[_numlist[4]] + "t ";
 			
-			if _numlist[5] > 0 _inuword += test.word[_numlist[5]] + test.suff1[_numlist[5]]
+			if _numlist[5] > 0 _inuword += gamecontroller.word[_numlist[5]] + gamecontroller.suff1[_numlist[5]]
 		};
 		
 		_inuword = string_trim(_inuword);
@@ -52,47 +52,7 @@ function assembler20(_rawnumlist){
 		return _inuword;
 	};
 };
-	//else {
-	//	var _inunum = ""
-//start with checking for endpoints
-		
-		
-		
-//		if _numlist[0] > 0 or _numlist[1] > 0{
-//			var _arraycheck400 = _numlist[2] == 3 and _numlist[3] == 4 and _numlist[4] == 3 and _numlist[5] == 4	
-//			if _arraycheck400 and _numlist[1] == 4{
-//				return test.word5[_numlist[0]+1] + test.suff400 + test.suffb
-//			}
-//			else {
-//				if _numlist[0] > 0 _inunum += test.word5[_numlist[0]] + test.suff400 + "q "
-//				if _arraycheck400 return _inunum +  test.word1[_numlist[0]+1] + test.suff400 + test.suffb
-//				else if _numlist[1] > 1 _inunum += test.word1[_numlist[1]] + test.suff400 + "q "
-//				else if _numlist [
-//			}
-//		}
-		
-//		if _numlist[2] > 0 or _numlist[3] > 0{
-//			var _arraycheck20 = _numlist[4] == 3 and _numlist[5] == 4	
-//			if _arraycheck20 and _numlist[3] == 4{
-//				return _inunum + test.word5[_numlist[2]+1] + test.suff20 + test.suffb
-//			}
-//			else {
-//				if _numlist[2] > 0 _inunum += test.word5[_numlist[2]] + test.suff20 + "q "
-//				if _arraycheck20 return _inunum +  test.word1[_numlist[3]+1] + test.suff20 + test.suffb
-//				else if _numlist[3] > 0 _inunum += test.word1[_numlist[3]] + test.suff20 + "q "
-//			}
 
-		
-			
-//		}		
-//	}
-
-////Exception for 6 if x,x,x,x,1,1
-	
-	
-
-//used to add one to a number list. Accepts a list and a position to begin the cascade.
-//cascade should never be performed on the extreme list
 function cascade(_rawnumlist){
 	
 	var _numlist = _rawnumlist;

@@ -6,4 +6,4 @@ if room == number_operations or room == number_conversions with gamecontroller{
 	liney = []
 }
 
-else if room == vocab_wordbuild with test event_perform_object(test,ev_keypress,vk_backspace)
+else if room == vocab_wordbuild with gamecontroller event_perform_object(gamecontroller,ev_keypress,vk_backspace)

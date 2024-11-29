@@ -11,8 +11,8 @@
   "name":"numbox",
   "overriddenProperties":[],
   "parent":{
-    "name":"numbers_room",
-    "path":"folders/Objects/numbers_room.yy",
+    "name":"Number boxes",
+    "path":"folders/Objects/numbers_room/Number boxes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

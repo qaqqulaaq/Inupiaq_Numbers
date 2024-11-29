@@ -3,7 +3,7 @@
 
 var _text = text;
 
-with test{
+with gamecontroller{
 
 	var _len = array_length(word_array) - 1
 	var _allowedwords = ["atausiq","malbuk","pifasut","sisamat","tallimat","itchaksrat","qulit","akimiaq","ieueeaq","ixagieeaq","-kipiaq","-agliaq","-butaixaq"];

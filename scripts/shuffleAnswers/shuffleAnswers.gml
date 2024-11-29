@@ -6,10 +6,10 @@ function shuffle_answers(_level)
 
 //Creates the empty list for random words	
 	var _numlist
-//Picks a random number for the first word
+//Picks a random number for the first word, which is used to determine the other words for the multichoice mode
 	switch(_level)
 	{
-		case 1: _numlist = loadChoice([0,0,0,0,0,0],7); break;
+		case 1: _numlist = loadChoice([0,0,0,0,0,0],7); break; //Special case for practicing the basic words
 				
 		case 2: _numlist = loadChoice([0,0,0,0,1,1],19); break;
 		
@@ -22,25 +22,25 @@ function shuffle_answers(_level)
 		case 5: _numlist = loadChoice([0,0,1,1,1,1],19); break;
 		case 6: _numlist = loadChoice([0,1,0,1,0,1],19); break;
 		case 7: _numlist = loadChoice([1,0,1,0,1,0],19); break;
-		case 8: _numlist = loadChoice([1,1,1,1,1,1],30); break;
+		case 8: _numlist = loadChoice([1,1,1,1,1,1],30); break; //only used in word builder mode
 	}
 	
 	
 
-//Sets the correct word, shuffles the words and assigns them to the choices
+//Sets the correct word in the multichoice mode, shuffles the words and assigns them to the choices
 	
 	if room = vocab_multichoice{
 		question.say = "Find the word that means\n" + string_lower(array_pop(_numlist));
-		test.correct_word = _numlist[0];
+		gamecontroller.correct_word = _numlist[0];
 		_numlist = array_shuffle(_numlist);
 		choice1.say = _numlist[0];
 		choice2.say = _numlist[1];
 		choice3.say = _numlist[2];
 		choice4.say = _numlist[3];
 	}
-	
+//Sets the correct word in the wordbuild mode
 	else if room = vocab_wordbuild{
 		question.say = "Build the word that means\n" + string_lower(array_pop(_numlist));
-		test.correct_word = _numlist[0];
+		gamecontroller.correct_word = _numlist[0];
 	}
 }

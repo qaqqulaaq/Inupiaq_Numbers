@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"updateNumber",
+  "%Name":"operation_controls",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"updateNumber",
+  "name":"operation_controls",
   "parent":{
     "name":"Contoller Specific",
     "path":"folders/Scripts/Numbers/Contoller Specific.yy",

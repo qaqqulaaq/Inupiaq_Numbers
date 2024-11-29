@@ -9,8 +9,8 @@
   "name":"leftarrow",
   "overriddenProperties":[],
   "parent":{
-    "name":"numbers_room",
-    "path":"folders/Objects/numbers_room.yy",
+    "name":"controlller objects",
+    "path":"folders/Objects/controlller objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

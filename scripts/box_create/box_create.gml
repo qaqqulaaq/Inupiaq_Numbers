@@ -1,11 +1,12 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//Creates boxes depending on the level. Called when changing the level
 function box_create(_level){
+	//destroys all previous number boxes
 	instance_destroy(numbox);
-	
+	//sets the generic placement, that can be changed more easily later
 	var _x = 448
 	var _y = 448
-	
+	//two separate switches due to two separate level systems
+	//both create one through five number boxes
 	if room == number_operations switch _level{
 		case 1: 
 			instance_create_layer(_x    , _y, "Instances",numbox0);

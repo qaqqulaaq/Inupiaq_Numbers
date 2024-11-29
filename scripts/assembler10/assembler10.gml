@@ -5,18 +5,18 @@ function assembler10(_numlist){
 	var _engnumlist = [_base10 div 1000,(_base10%1000) div 100,((_base10%1000)%100) div 10,((_base10%1000)%100)%10]
 	var _engword = ""
 
-//processes the number list
+//processes the number list, adds a break after the words "hundred" and "thousand"
 
-	if _engnumlist[0] > 0 _engword += test.engword[_engnumlist[0]] + " Thousand\n"
-	if _engnumlist[1] > 0 _engword += test.engword[_engnumlist[1]] + " Hundred\n"
+	if _engnumlist[0] > 0 _engword += gamecontroller.engword[_engnumlist[0]] + " Thousand\n";
+	if _engnumlist[1] > 0 _engword += gamecontroller.engword[_engnumlist[1]] + " Hundred\n";
 //exceptions for the tens place, teens or finishes with tens place
-	if _engnumlist[2] == 1 _engword += test.engwordt[_engnumlist[3]]
-	else if _engnumlist[2] > 1 and _engnumlist[3] == 0 _engword += test.engword10[_engnumlist[2]]
+	if _engnumlist[2] == 1 _engword += gamecontroller.engwordt[_engnumlist[3]];
+	else if _engnumlist[2] > 1 and _engnumlist[3] == 0 _engword += gamecontroller.engword10[_engnumlist[2]];
 //
 	else {
-		if _engnumlist[2] > 1 _engword += test.engword10[_engnumlist[2]] + "-"
-		if _engnumlist[3] > 0 _engword += test.engword[_engnumlist[3]]
-		if _engword = "" _engword = "Zero"
+		if _engnumlist[2] > 1 _engword += gamecontroller.engword10[_engnumlist[2]] + "-";
+		if _engnumlist[3] > 0 _engword += gamecontroller.engword[_engnumlist[3]];
+		if _engword = "" _engword = "Zero";
 	}
 	
 	return _engword

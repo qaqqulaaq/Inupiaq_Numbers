@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"numberConversionSwitch",
   "parent":{
-    "name":"Numbers",
-    "path":"folders/Scripts/Numbers.yy",
+    "name":"Contoller Specific",
+    "path":"folders/Scripts/Numbers/Contoller Specific.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

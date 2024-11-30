@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"english_words",
   "isCompatibility":false,
   "isDnD":false,

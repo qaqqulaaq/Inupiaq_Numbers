@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"assembler20",
   "isCompatibility":false,
   "isDnD":false,

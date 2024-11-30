@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"random_num_generator",
   "isCompatibility":false,
   "isDnD":false,

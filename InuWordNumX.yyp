@@ -42,12 +42,12 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"InuWordNumX",
   "resources":[
-    {"id":{"name":"EngWords","path":"fonts/EngWords/EngWords.yy",},},
     {"id":{"name":"EngWords_small","path":"fonts/EngWords_small/EngWords_small.yy",},},
+    {"id":{"name":"EngWords","path":"fonts/EngWords/EngWords.yy",},},
     {"id":{"name":"InupiaqNumbers","path":"fonts/InupiaqNumbers/InupiaqNumbers.yy",},},
     {"id":{"name":"Words","path":"fonts/Words/Words.yy",},},
     {"id":{"name":"Ex","path":"notes/Ex/Ex.yy",},},

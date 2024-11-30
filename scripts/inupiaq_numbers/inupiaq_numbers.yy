@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"inupiaq_numbers",
   "isCompatibility":false,
   "isDnD":false,

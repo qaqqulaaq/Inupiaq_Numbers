@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"numberConversionSwitch",
   "isCompatibility":false,
   "isDnD":false,

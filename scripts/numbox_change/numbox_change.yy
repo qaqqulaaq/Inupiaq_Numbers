@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"numbox_change",
   "isCompatibility":false,
   "isDnD":false,

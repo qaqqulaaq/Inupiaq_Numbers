@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"wordBuilder",
   "isCompatibility":false,
   "isDnD":false,

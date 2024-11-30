@@ -1,1 +1,1 @@
-room_goto(number_operations);
+if not helpbutton.menuhelp room_goto(number_operations);

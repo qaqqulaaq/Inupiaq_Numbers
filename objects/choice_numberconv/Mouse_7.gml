@@ -1,1 +1,1 @@
-room_goto(number_conversions);
+if not helpbutton.menuhelp room_goto(number_conversions);

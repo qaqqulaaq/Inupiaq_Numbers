@@ -12,7 +12,7 @@ function level_change(_dir){
 			case number_operations : _maxlevel = 7 ; break;
 			case number_conversions: _maxlevel = 10; break;
 			case vocab_multichoice : _maxlevel = 7 ; break;
-			case vocab_wordbuild   : _maxlevel = 9 ; break;
+			case vocab_wordbuild   : _maxlevel = 8 ; break;
 			default: break;
 		}
 

@@ -7,7 +7,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 
 //draw the level at the top of the screen
-if level < 10 draw_text(448,16,string(level));
+if level < 10 draw_text(448,10,string(level));
 else draw_text(448,16,"R");
 
 switch room{

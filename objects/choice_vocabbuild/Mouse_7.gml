@@ -1,1 +1,1 @@
-room_goto(vocab_wordbuild);
+if not helpbutton.menuhelp room_goto(vocab_wordbuild);

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"erase",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"erase",
+  "parent":{
+    "name":"Controller",
+    "path":"folders/Scripts/Controller.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

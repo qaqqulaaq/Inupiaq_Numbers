@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"draw_pen",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_pen",
+  "parent":{
+    "name":"Controller",
+    "path":"folders/Scripts/Controller.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

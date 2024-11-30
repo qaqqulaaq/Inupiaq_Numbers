@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"help",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"help",
+  "parent":{
+    "name":"Controller",
+    "path":"folders/Scripts/Controller.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

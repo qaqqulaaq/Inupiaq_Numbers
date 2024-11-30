@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"choosebox",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"choosebox",
+  "parent":{
+    "name":"Controller",
+    "path":"folders/Scripts/Controller.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

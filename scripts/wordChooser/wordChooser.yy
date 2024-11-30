@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"wordChooser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"wordChooser",
+  "parent":{
+    "name":"Assemblers",
+    "path":"folders/Scripts/Words/Assemblers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

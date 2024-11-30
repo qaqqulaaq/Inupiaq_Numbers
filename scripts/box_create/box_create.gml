@@ -10,7 +10,6 @@ function box_create(_level){
 	if room == number_operations switch _level{
 		case 1: 
 			instance_create_layer(_x    , _y, "Instances",numbox0);
-			operation.x = 328
 			break;
 			
 		case 2:
@@ -18,15 +17,12 @@ function box_create(_level){
 		case 4:
 			instance_create_layer(_x-80 , _y, "Instances",numbox1);
 			instance_create_layer(_x+80 , _y, "Instances",numbox0);
-			if _level == 2 operation.x = 368
-			else operation.x = 248
 			break;
 		
 		case 5:
 			instance_create_layer(_x-160, _y, "Instances",numbox2);
 			instance_create_layer(_x    , _y, "Instances",numbox1);
 			instance_create_layer(_x+160, _y, "Instances",numbox0);
-			operation.x = 288
 			break;
 			
 		case 6:
@@ -34,7 +30,6 @@ function box_create(_level){
 			instance_create_layer(_x-80 , _y, "Instances",numbox2);
 			instance_create_layer(_x+80 , _y, "Instances",numbox1);
 			instance_create_layer(_x+240, _y, "Instances",numbox0);
-			operation.x = 208
 			break;
 			
 		case 7:
@@ -43,7 +38,6 @@ function box_create(_level){
 			instance_create_layer(_x    , _y, "Instances",numbox1);
 			instance_create_layer(_x+160, _y, "Instances",numbox0);
 			instance_create_layer(_x+320, _y, "Instances",numbox2);
-			operation.x = 128
 			break;
 	}
 	

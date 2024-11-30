@@ -7,7 +7,7 @@ function reset(){
 			
 		case number_operations:
 		
-			var _setup = operation_controls(level,operation.mathop);
+			var _setup = operation_controls(level,mathop);
 			string1 = num_array_to_string(_setup[0]);
 			string2 = num_array_to_string(_setup[1]);
 			totalAmount = _setup[2];

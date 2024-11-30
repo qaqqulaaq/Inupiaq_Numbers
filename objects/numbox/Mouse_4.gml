@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if object_get_name(object_index) = "numbox4" and room = number_operations and (operation.mathop == "plus" or operation.mathop == "minus"){
+if object_get_name(object_index) = "numbox4" and room = number_operations and (gamecontroller.mathop == "plus" or gamecontroller.mathop == "minus"){
 	if number == 0 number = 1
 	else number = 0
 }

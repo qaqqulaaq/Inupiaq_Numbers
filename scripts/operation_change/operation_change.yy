@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"operation_change",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"operation_change",
+  "parent":{
+    "name":"Controller",
+    "path":"folders/Scripts/Controller.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

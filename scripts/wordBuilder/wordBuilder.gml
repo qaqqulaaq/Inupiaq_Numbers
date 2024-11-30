@@ -2,9 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function wordBuilder(_array){
 	
+	
 	var _text = "";
 	var _alen = array_length(_array)
-	for (var _i = 0; _i < _alen - 1; _i++ ){
+	
+	if _alen == 0 return "";
+	
+	else for (var _i = 0; _i < _alen - 1; _i++ ){
 		if _array[_i] == "qulit" and _array[_i+1] == "-butaixaq"{
 			_text += "quliffubutaixaq";
 			_i++;

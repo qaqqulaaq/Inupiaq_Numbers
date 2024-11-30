@@ -2,10 +2,5 @@
 // You can write your code in this editor
 
 
-if mathop = "plus" draw_self();
-else draw_sprite(spr_minus,0,x,y);
-
-
-
-
-;
+if gamecontroller.mathop = "plus" draw_sprite(sprite_index,1,x,y);
+else draw_sprite(sprite_index,0,x,y);

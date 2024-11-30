@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"macros",
+  "parent":{
+    "name":"Dictionaries",
+    "path":"folders/Scripts/Words/Dictionaries.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

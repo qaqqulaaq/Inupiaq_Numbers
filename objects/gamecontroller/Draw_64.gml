@@ -3,8 +3,10 @@
 //Sets to white, center and top by default
 draw_set_font(EngWords);
 draw_set_color(c_white);
-draw_set_halign(fa_center);
+draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+
+draw_text(10,5,NINE);
 
 //draw the level at the top of the screen
 if level < 10 draw_text(448,16,string(level));

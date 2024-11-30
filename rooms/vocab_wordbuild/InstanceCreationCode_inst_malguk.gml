@@ -1,1 +1,1 @@
-text = "malbuk"
+text = TWO

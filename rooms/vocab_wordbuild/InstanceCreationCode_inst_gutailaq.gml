@@ -1,1 +1,1 @@
-text = "-butaixaq"
+text = ALMOST

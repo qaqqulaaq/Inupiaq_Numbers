@@ -1,1 +1,1 @@
-text = "sisamat"
+text = FOUR

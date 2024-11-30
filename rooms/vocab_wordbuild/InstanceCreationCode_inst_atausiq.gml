@@ -1,1 +1,1 @@
-text = "atausiq"
+text = ONE

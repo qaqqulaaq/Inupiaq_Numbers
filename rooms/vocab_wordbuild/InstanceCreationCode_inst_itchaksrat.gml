@@ -1,1 +1,1 @@
-text = "itchaksrat"
+text = SIX

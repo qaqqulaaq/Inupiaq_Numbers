@@ -6,8 +6,8 @@ function inupiaq_words(){
 	
 	word[0] = "";
 	word[1] = "atausi";
-	word[2] = "malbu";
-	word[3] = "pifasu";
+	word[2] = "mal" + GDOT + "u";
+	word[3] = "pi" + NHAN + "asu";
 	word[4] = "sisama";
 	
 	word5[0] = "";
@@ -16,10 +16,10 @@ function inupiaq_words(){
 	word5[3] = "akimia";
 	
 	word6 = "itchaksrat ";
-	word9 = "quliffubutaixaq"
-	word14 = "akimiabutaixaq"
-	word20 = "ieueeaq ";
-	word400 = "ixagieeaq ";
+	word9 = "quli" + NHAN + "" + NHAN + "u" + GDOT + "utai" + LDOT + "aq"
+	word14 = "akimia" + GDOT + "utai" + LDOT + "aq"
+	word20 = "i" + NTIL + "u" + NTIL + "" + NTIL + "aq ";
+	word400 = "i" + LDOT + "agi" + NTIL + "" + NTIL + "aq ";
 	
 
 	
@@ -30,5 +30,5 @@ function inupiaq_words(){
 	
 	suff20 = "kipiaq ";
 	suff400 = "agliaq ";
-	suffb = "butaixaq";
+	suffb = GDOT + "utai" + LDOT + "aq";
 }

@@ -4,61 +4,61 @@ function wordChooser(_text){
 	with gamecontroller{
 
 		var _len = array_length(word_array) - 1
-		var _allowedwords = ["atausiq","malbuk","pifasut","sisamat","tallimat","itchaksrat","qulit","akimiaq","ieueeaq","ixagieeaq","-kipiaq","-agliaq","-butaixaq"];
+		var _allowedwords = [ONE,TWO,THREE,FOUR,FIVE,SIX,TEN,FIFTEEN,TWENTY,FOURHUNDRED,PB20,PB400,ALMOST];
 		var _isallowed = false;
 
 		if _len == -1 array_delete(_allowedwords,10,3);
 	
 		else switch word_array[_len]{
-				case "-agliaq":
-					if !(word_array[_len - 1] == "akimiaq" or word_array[_len - 1] == "qulit" or word_array[_len - 1] == "tallimat") array_delete(_allowedwords,9,3);
+				case PB400:
+					if !(word_array[_len - 1] == FIFTEEN or word_array[_len - 1] == TEN or word_array[_len - 1] == FIVE) array_delete(_allowedwords,9,3);
 					break;
-				case "-kipiaq":
-					if !(word_array[_len - 1] == "akimiaq" or word_array[_len - 1] == "qulit" or word_array[_len - 1] == "tallimat") array_delete(_allowedwords,8,4);
+				case PB20:
+					if !(word_array[_len - 1] == FIFTEEN or word_array[_len - 1] == TEN or word_array[_len - 1] == FIVE) array_delete(_allowedwords,8,4);
 					else array_delete(_allowedwords,9,3);
 					break;
 				
-				case "ixagieeaq":
+				case FOURHUNDRED:
 					array_delete(_allowedwords,9,3);
 					break;
 				
-				case "ieueeaq":
+				case TWENTY:
 					array_delete(_allowedwords,8,4);
 					break;
 				
-				case "akimiaq":
-				case "qulit":
-				case "tallimat":
-					if array_get_index(word_array, "ieueeaq") != -1 array_delete(_allowedwords,10,2)
-					else if array_get_index(word_array,"-kipiaq") != -1 array_delete(_allowedwords, 10, 2)
-					else if array_get_index(word_array,"ixagieeaq") != -1 array_delete(_allowedwords,11,1)
-					else if array_get_index(word_array,"-agliaq") != -1 array_delete(_allowedwords, 11, 1)
+				case FIFTEEN:
+				case TEN:
+				case FIVE:
+					if array_get_index(word_array, TWENTY) != -1 array_delete(_allowedwords,10,2)
+					else if array_get_index(word_array,PB20) != -1 array_delete(_allowedwords, 10, 2)
+					else if array_get_index(word_array,FOURHUNDRED) != -1 array_delete(_allowedwords,11,1)
+					else if array_get_index(word_array,PB400) != -1 array_delete(_allowedwords, 11, 1)
 					array_delete(_allowedwords, 3,6);		
-					if word_array[_len] == "tallimat"{
+					if word_array[_len] == FIVE{
 						array_pop(_allowedwords);
 						array_shift(_allowedwords);
 					}
 					break;
 				
-				case "malbuk":
-				case "pifasut":
-				case "sisamat":
+				case TWO:
+				case THREE:
+				case FOUR:
 					if _len > 0{
-						if _len > 0 and word_array[_len - 1] == "akimiaq" or word_array[_len - 1] == "qulit" or word_array[_len - 1] == "tallimat" array_delete(_allowedwords,10,2);
+						if _len > 0 and word_array[_len - 1] == FIFTEEN or word_array[_len - 1] == TEN or word_array[_len - 1] == FIVE array_delete(_allowedwords,10,2);
 					
-						else if array_get_index(word_array, "ieueeaq") != -1 array_delete(_allowedwords,10,2)
+						else if array_get_index(word_array, TWENTY) != -1 array_delete(_allowedwords,10,2)
 					
-						else if array_get_index(word_array,"ixagieeaq") != -1 array_delete(_allowedwords,11,1)
+						else if array_get_index(word_array,FOURHUNDRED) != -1 array_delete(_allowedwords,11,1)
 					
 						else{
-							var _kip = array_get_index(word_array,"-kipiaq",-1,-infinity);
+							var _kip = array_get_index(word_array,PB20,-1,-infinity);
 							if _kip != -1 {
-								if !(word_array[_kip - 1] == "akimiaq" or word_array[_kip - 1] == "qulit" or word_array[_kip - 1] == "tallimat") array_delete(_allowedwords,10,2);
+								if !(word_array[_kip - 1] == FIFTEEN or word_array[_kip - 1] == TEN or word_array[_kip - 1] == FIVE) array_delete(_allowedwords,10,2);
 								else array_delete(_allowedwords,11,1); 
 							}
 							else{
-								var _ag = array_get_index(word_array,"-agliaq",-1,-infinity);
-								if !(word_array[_ag - 1] == "akimiaq" or word_array[_ag - 1] == "qulit" or word_array[_ag - 1] == "tallimat") array_delete(_allowedwords,11,1);
+								var _ag = array_get_index(word_array,PB400,-1,-infinity);
+								if !(word_array[_ag - 1] == FIFTEEN or word_array[_ag - 1] == TEN or word_array[_ag - 1] == FIVE) array_delete(_allowedwords,11,1);
 							}
 						}
 					}
@@ -67,9 +67,9 @@ function wordChooser(_text){
 					array_pop(_allowedwords);
 					break;
 				
-				case "atausiq":
-				case "itchaksrat":
-				case "-butaixaq":
+				case ONE:
+				case SIX:
+				case ALMOST:
 					array_delete(_allowedwords,0,array_length(_allowedwords))
 					break;;
 			}		

@@ -7,7 +7,7 @@ function assembler20(_rawnumlist){
 	var _numlist = array_create(0)
 	array_copy(_numlist, 0,_rawnumlist,0,array_length(_rawnumlist)) 
 //Start with extreme
-	if array_equals(_numlist,[3,4,3,4,3,4]) return "atausiqpautaixaq";
+	if array_equals(_numlist,[3,4,3,4,3,4]) return "atausiqpautai" + LDOT + "aq";
 	if array_equals(_numlist,[0,0,0,0,0,0]) return "suitchuq";
 	
 //Exception for one before an increase to 5 or 20, EXCEPT if 5 is 0
@@ -47,7 +47,7 @@ function assembler20(_rawnumlist){
 		};
 		
 		_inuword = string_trim(_inuword);
-		if _oneless = true _inuword = string_delete(_inuword,string_length(_inuword),1)+"butaixaq";
+		if _oneless = true _inuword = string_delete(_inuword,string_length(_inuword),1) + GDOT +"utai" + LDOT + "aq";
 		
 		return _inuword;
 	};

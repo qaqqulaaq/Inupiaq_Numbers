@@ -2,10 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function macros(){
 	
-// l with dot  : "\u1e37"
-// g with dot  : "\u0121"
-// n with tilde: "\u00f1"
-// hanging n   : "\u014b"
 
 #macro LDOT "\u1e37"
 #macro GDOT "\u0121"
@@ -13,17 +9,23 @@ function macros(){
 #macro NHAN "\u014b"
 
 #macro ONE "atausiq"
-#macro TWO "mal" +"\u0121" + "uk"
-#macro THREE "pi" + "\u014b" + "asut"
+#macro TWO "mal" +GDOT + "uk"
+#macro THREE "pi" + NHAN + "asut"
 #macro FOUR "sisamat"
 #macro FIVE "tallimat"
 #macro SIX "itchaksrat"
 
-#macro NINE "quli" + "\u014b" + "\u014b" + "u" + "\u0121" + "utai" + "\u1e37" + "aq"
+#macro NINE "quli" + NHAN + NHAN + "u" + GDOT + "utai" + LDOT + "aq"
 #macro TEN "qulit"
 
-#macro FOURTEEN "akimia" + "\u0121" + "utai" + "\u1e37" + "aq"
+#macro FOURTEEN "akimia" + GDOT + "utai" + LDOT + "aq"
 #macro FIFTEEN "akimiaq"
 
+#macro TWENTY "i" + NTIL + "u" + NTIL + "" + NTIL + "aq "
+#macro FOURHUNDRED "i" + LDOT + "agi" + NTIL + NTIL + "aq "
+
+#macro ALMOST "-" + GDOT + "utai" + LDOT + "aq"
+#macro PB20 "-kipiaq"
+#macro PB400 "-agliaq"
 
 }

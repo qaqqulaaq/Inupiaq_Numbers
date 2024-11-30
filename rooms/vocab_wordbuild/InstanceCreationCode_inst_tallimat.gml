@@ -1,1 +1,1 @@
-text = "tallimat"
+text = FIVE

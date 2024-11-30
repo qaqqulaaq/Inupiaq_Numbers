@@ -9,8 +9,8 @@ function wordBuilder(_array){
 	if _alen == 0 return "";
 	
 	else for (var _i = 0; _i < _alen - 1; _i++ ){
-		if _array[_i] == "qulit" and _array[_i+1] == "-butaixaq"{
-			_text += "quliffubutaixaq";
+		if _array[_i] == TEN and _array[_i+1] == ALMOST{
+			_text += NINE;
 			_i++;
 		}
 		
@@ -24,7 +24,7 @@ function wordBuilder(_array){
 	
 	
 	if string_pos("-",_array[_alen-1]) == 0 _text += _array[_alen-1];
-	else if _array[_alen-1] == "-butaixaq" and string_pos("butaixaq",_text) == 0 {
+	else if _array[_alen-1] == ALMOST and string_pos(GDOT+"utai"+LDOT+"aq",_text) == 0 {
 		_text = string_copy(_text,1,string_length(_text)-2) + string_copy(_array[_alen-1],2,string_length(_array[_alen-1]))
 	}
 	

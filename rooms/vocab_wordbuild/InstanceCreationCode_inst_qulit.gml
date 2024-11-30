@@ -1,1 +1,1 @@
-text = "qulit"
+text = TEN

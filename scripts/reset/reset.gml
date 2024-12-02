@@ -15,8 +15,8 @@ function reset(){
 			linex = [];
 			liney = [];
 			with numbox {
-			number = 0;
-			correct = 0;
+				number = 0;
+				correct = 0;
 			}
 			break;
 			
@@ -45,7 +45,8 @@ function reset(){
 				correct = 0;
 			}
 			break;
-				
+			
+						
 		case vocab_multichoice:
 			shuffle_answers(level);
 			choice1.right = 0;
@@ -54,7 +55,9 @@ function reset(){
 			choice4.right = 0;
 			instance_deactivate_object(nextbox);
 			break;
-				
+		
+		case number_toword:
+			
 		case vocab_wordbuild:
 			shuffle_answers(level);
 			word_array = []

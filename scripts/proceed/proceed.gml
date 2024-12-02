@@ -54,7 +54,10 @@ function proceed(){
 					}
 				}
 				break;
-		
+			
+			case number_toword:
+				
+			
 			case vocab_wordbuild:
 				if string_replace_all(string_lower(display_text),"\n"," ") == string_replace_all(string_lower(correct_word),"\n"," ") question.say = "Aarigaa!";
 				else {

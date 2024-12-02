@@ -1,0 +1,1 @@
+if not helpbutton.menuhelp room_goto(number_toword);

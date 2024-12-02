@@ -29,7 +29,13 @@ function shuffle_answers(_level)
 
 //Sets the correct word in the multichoice mode, shuffles the words and assigns them to the choices
 	
-	if room = vocab_multichoice{
+	if room == number_toword{
+		if mode_number question.say = "Make the number for\n" + array_shift(_numlist);
+		else question.say = "Build the word for\n" + array_pop(_numlist);
+		gamecontroller.correct_word = _numlist[0];
+	}
+	
+	else if room = vocab_multichoice{
 		question.say = "Find the word that means\n" + string_lower(array_pop(_numlist));
 		gamecontroller.correct_word = _numlist[0];
 		_numlist = array_shuffle(_numlist);

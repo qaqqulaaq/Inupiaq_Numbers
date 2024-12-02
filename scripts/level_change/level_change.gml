@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function level_change(_dir){
 	var _box = false;
-	if room == number_operations or (room == number_conversions and gamecontroller.kaktovik) _box = true;
+	if room == number_operations or (room == number_toword and gamecontroller.mode_number) or (room == number_conversions and gamecontroller.kaktovik) _box = true;
 
 	if _dir{
 		var _maxlevel;
@@ -11,9 +11,10 @@ function level_change(_dir){
 		switch room{
 			case number_operations : _maxlevel = 7 ; break;
 			case number_conversions: _maxlevel = 10; break;
+			case number_toword     : _maxlevel = 8 ; break;
 			case vocab_multichoice : _maxlevel = 7 ; break;
 			case vocab_wordbuild   : _maxlevel = 8 ; break;
-			default: break;
+			default                : _maxlevel = 1 ; break;
 		}
 
 		with gamecontroller if level < _maxlevel {

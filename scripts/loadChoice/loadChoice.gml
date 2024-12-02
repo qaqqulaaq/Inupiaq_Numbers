@@ -86,7 +86,11 @@ function loadChoice(_numlistraw, _maxno){
 		};
 	}
 //Stores the English word, then replaces each of the number lists with a word
-	_ranword[_length] = assembler10(_ranword[0]);
+	if room == number_toword {
+		_ranword[_length] = [_ranword[0][0]*5 + _ranword[0][1],_ranword[0][2]*5 + _ranword[0][3],_ranword[0][4]*5 + _ranword[0][5]] // see if this is easier later:  _ranword[0][0]*2000 + _ranword[0][1] * 400 + _ranword[0][2] * 100 + _ranword[0][3] * 20 + _ranword[0][4] * 5 + _ranword[0][5]; 
+	}
+	
+	else _ranword[_length] = assembler10(_ranword[0]);
 	for(var _i = 0; _i < _length; _i +=1){
 		_ranword[_i] = assembler20(_ranword[_i]);
 	}

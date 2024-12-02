@@ -2,6 +2,9 @@
 // You can write your code in this editor
 
 //cycles through helpmode
+if keyboard_check_pressed(vk_space) instance_deactivate_object(wordbox)
+
+if keyboard_check_pressed(vk_shift) instance_activate_object(wordbox)
 
 if drawing {
 	if mouse_check_button(mb_left) draw_pen()

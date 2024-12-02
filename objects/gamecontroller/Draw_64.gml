@@ -68,7 +68,7 @@ switch room{
 		}
 		break;
 		
-		
+	case number_toword:	
 	case vocab_wordbuild:
 		draw_set_font(Words_24);
 		draw_set_color(c_yellow);

@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function erase(){
 	with gamecontroller{
-		if room == vocab_wordbuild{
+		if room == vocab_wordbuild or room == number_toword{
 			if array_length(word_array) > 0 {
 				array_pop(word_array);
 				if array_length(word_array) > 1 display_text = wordBuilder(word_array);

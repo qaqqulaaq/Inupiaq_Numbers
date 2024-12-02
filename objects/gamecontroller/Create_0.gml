@@ -35,6 +35,8 @@ switch room {
 		_ansarray = [];
 		break;
 		
+	case number_toword:
+		mode_number = true;
 	//word specific variables
 	case vocab_wordbuild:
 		word_array = [];

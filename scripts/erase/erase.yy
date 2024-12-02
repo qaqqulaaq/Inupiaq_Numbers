@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"erase",
   "parent":{
-    "name":"Controller",
-    "path":"folders/Scripts/Controller.yy",
+    "name":"Drawing",
+    "path":"folders/Scripts/Controller/Drawing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

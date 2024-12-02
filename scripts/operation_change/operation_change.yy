@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"operation_change",
   "parent":{
-    "name":"Controller",
-    "path":"folders/Scripts/Controller.yy",
+    "name":"Number Controls",
+    "path":"folders/Scripts/Controller/Number Controls.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

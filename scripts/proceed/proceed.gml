@@ -47,9 +47,11 @@ function proceed(){
 					}
 				}
 		
-				if _ansarray[4] != numbox0.number{
-					numbox0.correct = 1;
-					numbox0.number = _ansarray[4];
+				if instance_exists(numbox0){
+					if _ansarray[4] != numbox0.number{
+						numbox0.correct = 1;
+						numbox0.number = _ansarray[4];
+					}
 				}
 				break;
 		

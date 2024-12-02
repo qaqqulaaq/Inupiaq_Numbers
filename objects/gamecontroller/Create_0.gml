@@ -9,6 +9,7 @@ prev_array = [];
 answered = false;
 helpmode = false;
 page = 0;
+drawing = false;
 
 switch room {
 	//number specific variables
@@ -26,6 +27,7 @@ switch room {
 		break;
 
 	case number_conversions:
+		kaktovik = true
 		linex = [];
 		liney = [];
 		setnumber = 0;

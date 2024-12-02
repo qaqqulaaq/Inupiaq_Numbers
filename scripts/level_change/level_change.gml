@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function level_change(_dir){
 	var _box = false;
-	if room == number_operations or room == number_conversions _box = true;
+	if room == number_operations or (room == number_conversions and gamecontroller.kaktovik) _box = true;
 
 	if _dir{
 		var _maxlevel;

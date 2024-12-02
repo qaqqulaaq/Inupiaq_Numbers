@@ -21,14 +21,28 @@ function reset(){
 			break;
 			
 		case number_conversions:
-			totalAmount = numberConversionSwitch(level)
-			question.say = "Convert the following number:\n" + string(totalAmount)
+			totalAmount = numberConversionSwitch(level);
+			
+			if kaktovik question.say = "Convert the following number:\n" + string(totalAmount);
+			
+			else{
+				question.say = "Convert the following number:\n"
+				
+				var _temp = [totalAmount div 160000, (totalAmount % 160000) div 8000, (totalAmount % 8000) div 400, (totalAmount % 400) div 20, (totalAmount % 20)]
+				var _lead = false
+				
+				for (var _i = 0; _i < array_length(_temp); _i++){
+					if _lead question.say += string(chr(KN+_temp[_i]))
+					else if _temp[_i] > 0 {_lead = true; question.say += string(chr(KN+_temp[_i]))}
+				}
+			}
+			
 			setnumber = 0;
 			linex = [];
 			liney = [];
-			with numbox {
-			number = 0;
-			correct = 0;
+			if kaktovik == true with numbox {
+				number = 0;
+				correct = 0;
 			}
 			break;
 				

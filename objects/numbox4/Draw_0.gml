@@ -3,4 +3,4 @@
 
 event_inherited();
 
-if number > 0 draw_text(x,y+20,chr(58783+number));
+if number > 0 draw_text(x,y,chr(KN + number));

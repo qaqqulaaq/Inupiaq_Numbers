@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function macros(){
 	
-
+#macro KN 58784
 #macro LDOT "\u1e37"
 #macro GDOT "\u0121"
 #macro NTIL "\u00f1"
@@ -27,5 +27,7 @@ function macros(){
 #macro ALMOST "-" + GDOT + "utai" + LDOT + "aq"
 #macro PB20 "-kipiaq"
 #macro PB400 "-agliaq"
+
+#macro k00 "\u1d2c0"
 
 }

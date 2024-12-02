@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_set_font(EngWords_small)
+draw_set_font(Words_14)
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 

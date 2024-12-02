@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"choosebox",
   "parent":{
-    "name":"Controller",
-    "path":"folders/Scripts/Controller.yy",
+    "name":"Vocab Controls",
+    "path":"folders/Scripts/Controller/Vocab Controls.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

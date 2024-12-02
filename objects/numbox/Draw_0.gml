@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 draw_self();
-draw_set_font(InupiaqNumbers);
+draw_set_font(InupiaqNumbers_150);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 if correct == 1 draw_set_color(c_red);

@@ -7,7 +7,7 @@ if not gamecontroller.answered and mouse_check_button(mb_left) and position_meet
 
 else {
 	draw_self();
-	draw_set_font(EngWords);
+	draw_set_font(Words_24);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	if right = 0 draw_text_color(x,y,say,c_white,c_white,c_white,c_white,1);

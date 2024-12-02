@@ -1,7 +1,7 @@
 //Returns a random number that is used for the Number Conversion Mode.
 function numberConversionSwitch(_level){
 		switch _level{
-		case 1: return irandom(19); 
+		case 1: return irandom_range(1,19); 
 		case 2: return irandom(79) + 20; 
 		case 3: return irandom(299) + 100; 
 		case 4: return irandom(1599) + 400; 

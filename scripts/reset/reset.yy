@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"reset",
   "parent":{
-    "name":"Controller",
-    "path":"folders/Scripts/Controller.yy",
+    "name":"General Controls",
+    "path":"folders/Scripts/Controller/General Controls.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -30,11 +30,13 @@ function conv_change(){
 				instance_destroy(numbox);
 				word_box_create();	
 				mode_number = false
+				reset();
 			}
 			else{
 				instance_destroy(wordbox);
 				box_create(level);
 				mode_number = true
+				reset();
 			}
 		}
 	}

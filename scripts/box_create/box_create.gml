@@ -81,12 +81,23 @@ function box_create(_level){
 	
 	else if room == number_toword switch _level{
 		case 1:
+		case 2:
 			instance_create_layer(_x    , _y, "Instances",numbox0);
 			break;
 			
-		case 2:
+		case 3:
+		case 4:
+		case 5:
 			instance_create_layer(_x-80 , _y, "Instances",numbox1);
 			instance_create_layer(_x+80 , _y, "Instances",numbox0);
+			break;
+			
+		case 6:
+		case 7:
+		case 8:
+			instance_create_layer(_x-160, _y, "Instances",numbox2);
+			instance_create_layer(_x    , _y, "Instances",numbox1);
+			instance_create_layer(_x+160, _y, "Instances",numbox0);
 			break;
 	}
 	

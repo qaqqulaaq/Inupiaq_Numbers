@@ -5,8 +5,6 @@
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_set_font(InupiaqNumbers_48)
-draw_text(50,10,correct_word)
 draw_set_font(Words_24);
 
 
@@ -167,8 +165,22 @@ if helpmode {
 		draw_text(_left + _margin, _top + _margin , "The goal of this exercise is to practice vocabulary by\nbuilding the correct word.");
 		draw_text(_left + _margin, _top + _margin + _line*2 ,"Each word or postbase that you click on will be added\nto your answer. Once you have assembled the correct\nword, enter it to check your answer.");
 	}
+	
+	else if page == 0 and room == number_toword{
+		draw_text(_left + _margin, _top + _margin , "The goal of this exercise is to bridge words and numbers.");
+		draw_text(_left + _margin, _top + _margin + _line*1, "Set the number box to match the displayed word, or\nbuild the word to match the displayed number.");
+		draw_text(_left + _margin, _top + _margin + _line*3 , "Clicking on the bottom portion of the number box will\nincrease the number by one, while clicking the top\nportion of the number box will increase the number\nby 5.");
+		
+		draw_sprite(spr_numbox,0,room_width/2,_top + _margin + _line * 5.5);
+		draw_set_halign(fa_center);
+		draw_text(room_width/2,_top + _margin + _line*5.5 + 24, "5");
+		draw_text(room_width/2,_top + _margin + _line*5.5 + 112, "1");
+		
+		draw_set_halign(fa_left);
+		
+	}
 
-	else if page == 1 and room == number_conversions or room == number_operations or room == vocab_wordbuild
+	else if page == 1 and room == number_conversions or room == number_operations or room == vocab_wordbuild or room == number_toword
 	{
 		draw_sprite(spr_nextbox,0,_left + _margin, _top + _margin);
 		draw_text(_left + _spr_off,_top + _margin , "or the 'enter' key will enter your answer.");
@@ -209,9 +221,17 @@ if helpmode {
 			}
 		}
 		
-		else if room == vocab_wordbuild{
+		else if room == vocab_wordbuild or room == number_toword{
 			draw_sprite(spr_eraser,0,_left+_margin,_top + _margin + _line*3);
-			draw_text(_left+_spr_off,_top + _margin + _line*3, "or 'backspace' will delete the previous word.");			
+			draw_text(_left+_spr_off,_top + _margin + _line*3, "or 'backspace' will delete the previous word.");
+			
+			if room == number_toword{
+				draw_sprite(spr_convert,0,_left+_margin,_top + _margin + _line*4);
+				draw_text(_left+_spr_off,_top + _margin + _line*4, "will change to word entry mode.");
+				
+				draw_sprite(spr_convert,1,_left+_margin,_top + _margin + _line*5);
+				draw_text(_left+_spr_off,_top + _margin + _line*5, "will change to numerber entry mode.");				
+			}
 		}	
 	}
 }

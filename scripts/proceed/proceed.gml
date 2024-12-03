@@ -24,9 +24,8 @@ function proceed(){
 				if mode_number{
 					if numbercheck(correct_word){
 					question.say = "AARIGAA!"
-					if array_length(prev_array) > 15 array_delete(prev_array,0,3);
-					array_push(prev_array,totalAmount);
 					}
+					else question.say = "Naumi.\n" + correct_word
 					
 				}
 				
@@ -37,7 +36,8 @@ function proceed(){
 				break;
 			
 			case vocab_wordbuild:
-				
+					if string_replace_all(string_lower(display_text),"\n"," ") == string_replace_all(string_lower(correct_word),"\n"," ") question.say = "Aarigaa!";
+					else question.say = "Naumi.\n" + correct_word;					
 				break;
 		
 			default: break;

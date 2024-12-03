@@ -12,8 +12,8 @@ function loadChoice(_numlistraw, _maxno){
 	//Sets up a list of words for 0-6, 10 and 15
 		var _word_list = [[0,0,0,0,0,0],[0,0,0,0,0,1],[0,0,0,0,0,2],[0,0,0,0,0,3],[0,0,0,0,0,4],[0,0,0,0,1,0],[0,0,0,0,1,1],[0,0,0,0,2,0],[0,0,0,0,3,0]];
 	//Removes zero from the list of choices if the room is wordbuild
-		if room = vocab_wordbuild array_shift(_word_list);
-	//Resets the previous word array once all words have been used
+		if instance_exists(wordbox) array_shift(_word_list);
+	//Resets the previous word array  once all words have been used
 		if array_length(gamecontroller.prev_array) == array_length(_word_list) gamecontroller.prev_array = [];
 	//Keeps trying to add a word that is not on the list. Probably should find a more efficient method to this later
 		while array_length(_ranword) == 0{
@@ -65,10 +65,10 @@ function loadChoice(_numlistraw, _maxno){
 					if array_equals(_ranword[_i],_numlist) _flag = true;
 				};
 			};
+			
+			//Makes sure to reroll if wordbuilding
+			if array_length(_ranword) == 0 and instance_exists(wordbox) and array_equals(_numlist,[0,0,0,0,0,0]) _flag = true;
 			//Checks to see of the chosen number was already answered
-			//BUG! Seems to not filter out anything ending in -gutailaq
-			if array_length(_ranword) == 0 and room = vocab_wordbuild and array_equals(_numlist,[0,0,0,0,0,0]) _flag = true;
-		
 			if array_length(gamecontroller.prev_array) > 0 and array_length(_ranword) == 0{
 				for(var _i = 0; _i < array_length(gamecontroller.prev_array); _i+=1){
 					if array_equals(_numlist,gamecontroller.prev_array[_i]) {
@@ -87,7 +87,8 @@ function loadChoice(_numlistraw, _maxno){
 	}
 //Stores the English word, then replaces each of the number lists with a word
 	if room == number_toword {
-		_ranword[_length] = string_trim_start((chr(KN + _ranword[0][0]*5 + _ranword[0][1]) + chr(KN + _ranword[0][2]*5 + _ranword[0][3]) + chr(KN +_ranword[0][4]*5 + _ranword[0][5])),[chr(KN)])// see if this is easier later:  _ranword[0][0]*2000 + _ranword[0][1] * 400 + _ranword[0][2] * 100 + _ranword[0][3] * 20 + _ranword[0][4] * 5 + _ranword[0][5]; 
+		_ranword[_length] = string_trim_start(chr(KN + _ranword[0][0]*5 + _ranword[0][1]) + chr(KN + _ranword[0][2]*5 + _ranword[0][3]) + chr(KN +_ranword[0][4]*5 + _ranword[0][5]),[chr(KN)]);
+		if string_length(_ranword[_length]) == 0 _ranword[_length] = chr(KN);
 	}
 	
 	else _ranword[_length] = assembler10(_ranword[0]);

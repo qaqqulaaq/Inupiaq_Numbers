@@ -7,6 +7,8 @@ function numbercheck(_question){
 	if instance_exists(numbox2) _string += chr(KN + numbox2.number)
 	if instance_exists(numbox1) _string += chr(KN + numbox1.number)
 	_string += chr(KN + numbox0.number)
+	_string = string_trim_start(_string,[chr(KN)])
+	if string_length(_string) == 0 _string = chr(KN)
 	
 	return _string == _question
 }

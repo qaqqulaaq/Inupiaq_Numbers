@@ -6,7 +6,7 @@ function numbox_check(_amount){
 	
 	if room == number_operations or room == number_conversions _ansarray = [_amount div 160000, (_amount % 160000) div 8000, (_amount % 8000) div 400, (_amount % 400) div 20, (_amount % 20)]
 				
-	else if room == number_toword _ansarray = [0,0,_amount[2],_amount[1],_amount[0]]
+	else if room == number_toword _ansarray = [0,0,string_ord_at(_amount,1)-KN,string_ord_at(_amount,2)-KN,string_ord_at(_amount,3)-KN]
 	
 	if instance_exists(numbox4){
 		if _ansarray[0] != numbox4.number{

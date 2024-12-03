@@ -87,7 +87,7 @@ function loadChoice(_numlistraw, _maxno){
 	}
 //Stores the English word, then replaces each of the number lists with a word
 	if room == number_toword {
-		_ranword[_length] = [_ranword[0][0]*5 + _ranword[0][1],_ranword[0][2]*5 + _ranword[0][3],_ranword[0][4]*5 + _ranword[0][5]] // see if this is easier later:  _ranword[0][0]*2000 + _ranword[0][1] * 400 + _ranword[0][2] * 100 + _ranword[0][3] * 20 + _ranword[0][4] * 5 + _ranword[0][5]; 
+		_ranword[_length] = string_trim_start((chr(KN + _ranword[0][0]*5 + _ranword[0][1]) + chr(KN + _ranword[0][2]*5 + _ranword[0][3]) + chr(KN +_ranword[0][4]*5 + _ranword[0][5])),[chr(KN)])// see if this is easier later:  _ranword[0][0]*2000 + _ranword[0][1] * 400 + _ranword[0][2] * 100 + _ranword[0][3] * 20 + _ranword[0][4] * 5 + _ranword[0][5]; 
 	}
 	
 	else _ranword[_length] = assembler10(_ranword[0]);
@@ -96,7 +96,8 @@ function loadChoice(_numlistraw, _maxno){
 	}
 
 //Splits all of the words with a line break
-	for(var _i = 0; _i<array_length(_ranword)-1;_i+= 1){
+	var _len = 0
+	if room != number_toword for(var _i = 0; _i<array_length(_ranword)-1;_i+= 1){
 		var _temp = string_split(_ranword[_i]," ",true);
 		_ranword[_i] = "";
 		while array_length(_temp) > 1{
@@ -108,5 +109,15 @@ function loadChoice(_numlistraw, _maxno){
 		}
 		_ranword[_i] += array_shift(_temp);
 	};
+	
+	else if room == number_toword{
+		
+		if string_pos(FOURHUNDRED,_ranword[0]) !=0 _ranword[0] = string_insert("\n",_ranword[0], string_pos(FOURHUNDRED,_ranword[0])+9);
+		else if string_last_pos("agliaq",_ranword[0]) != 0 _ranword[0] = string_insert("\n",_ranword[0],string_last_pos("agliaq",_ranword[0])+6);
+		if string_pos(TWENTY,_ranword[0]) != 0 _ranword[0] = string_insert("\n",_ranword[0],string_pos(TWENTY,_ranword[0])+7);
+		else if string_last_pos("kipiaq",_ranword[0]) != 0 _ranword[0] = string_insert("\n",_ranword[0],string_last_pos("kipiaq",_ranword[0])+6);
+		_ranword[0] = string_replace_all(_ranword[0],"\n ","\n")
+	}
+	
 	return _ranword;
 }

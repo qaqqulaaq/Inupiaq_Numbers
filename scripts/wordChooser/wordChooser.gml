@@ -4,7 +4,19 @@ function wordChooser(_text){
 	with gamecontroller{
 
 		var _len = array_length(word_array) - 1
-		var _allowedwords = [ONE,TWO,THREE,FOUR,FIVE,SIX,TEN,FIFTEEN,TWENTY,FOURHUNDRED,PB20,PB400,ALMOST];
+		var _allowedwords = [ONE,          //0
+							 TWO,          //1
+							 THREE,        //2
+							 FOUR,         //3
+							 FIVE,         //4
+							 SIX,          //5
+							 TEN,          //6
+							 FIFTEEN,      //7
+							 TWENTY,       //8
+							 FOURHUNDRED,  //9
+							 PB20,         //10
+							 PB400,        //11
+							 ALMOST];      //12
 		var _isallowed = false;
 
 		if _len == -1 array_delete(_allowedwords,10,3);
@@ -12,6 +24,7 @@ function wordChooser(_text){
 		else switch word_array[_len]{
 				case PB400:
 					if !(word_array[_len - 1] == FIFTEEN or word_array[_len - 1] == TEN or word_array[_len - 1] == FIVE) array_delete(_allowedwords,9,3);
+					else array_delete(_allowedwords,10,2)
 					break;
 				case PB20:
 					if !(word_array[_len - 1] == FIFTEEN or word_array[_len - 1] == TEN or word_array[_len - 1] == FIVE) array_delete(_allowedwords,8,4);

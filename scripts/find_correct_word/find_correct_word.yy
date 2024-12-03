@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"find_correct_word",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"find_correct_word",
+  "parent":{
+    "name":"Assemblers",
+    "path":"folders/Scripts/Words/Assemblers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

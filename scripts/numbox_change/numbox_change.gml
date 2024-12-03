@@ -37,12 +37,16 @@ function numbox_change(_id,_dir){
 			}			
 		}
 		
-		gamecontroller.setnumber = 0 
-		if instance_exists(numbox4) gamecontroller.setnumber += numbox4.number*160000;
-		if instance_exists(numbox3) gamecontroller.setnumber += numbox3.number*8000;
-		if instance_exists(numbox2) gamecontroller.setnumber += numbox2.number*400;
-		if instance_exists(numbox1) gamecontroller.setnumber += numbox1.number*20;
-		gamecontroller.setnumber += numbox0.number;		
-		
+
+		if room == number_operations or room == number_conversions{
+			var _setnumber = 0 ;
+			if instance_exists(numbox4) _setnumber += numbox4.number*160000;
+			if instance_exists(numbox3) _setnumber += numbox3.number*8000;
+			if instance_exists(numbox2) _setnumber += numbox2.number*400;
+			if instance_exists(numbox1) _setnumber += numbox1.number*20;
+			_setnumber += numbox0.number;
+			return _setnumber
+		}
+
 	}
 }

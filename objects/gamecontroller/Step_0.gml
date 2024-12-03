@@ -38,8 +38,13 @@ else if not helpmode{
 
 	
 		//changes the numbers in numbox
+		
+		else if position_meeting(mouse_x,mouse_y,numbox) and mouse_check_button_pressed(mb_left) and room != number_toword setnumber = numbox_change(instance_position(mouse_x,mouse_y,numbox),"add");
+		else if position_meeting(mouse_x,mouse_y,numbox) and mouse_check_button_pressed(mb_right) and room != number_toword setnumber = numbox_change(instance_position(mouse_x,mouse_y,numbox),"minus");
+		
 		else if position_meeting(mouse_x,mouse_y,numbox) and mouse_check_button_pressed(mb_left) numbox_change(instance_position(mouse_x,mouse_y,numbox),"add");
 		else if position_meeting(mouse_x,mouse_y,numbox) and mouse_check_button_pressed(mb_right) numbox_change(instance_position(mouse_x,mouse_y,numbox),"minus");
+		
 		//activates the other assorted buttons
 		else if position_meeting(mouse_x,mouse_y,wordbox) and mouse_check_button_released(mb_left) wordChooser(instance_position(mouse_x,mouse_y,wordbox).text);
 		//draws on the screen

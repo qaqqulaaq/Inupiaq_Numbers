@@ -1,11 +1,13 @@
 ///@description Draws everything
 
 //Sets to white, center and top by default
-draw_set_font(Words_24);
+
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-
+draw_set_font(InupiaqNumbers_48)
+draw_text(50,10,correct_word)
+draw_set_font(Words_24);
 
 
 //draw the level at the top of the screen
@@ -16,7 +18,7 @@ switch room{
 	
 	case number_operations:
 		if answered{
-			if setnumber == totalAmount draw_text(150,20,"ARRIGAA!");
+			if setnumber == totalAmount draw_text(150,20,"AARIGAA!");
 			else draw_text(120,20,"Naumi.");
 		}
 	

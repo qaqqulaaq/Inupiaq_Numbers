@@ -50,7 +50,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1100.0.700",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"InuWordNumX",
   "resources":[
@@ -104,6 +104,7 @@
     {"id":{"name":"draw_pen","path":"scripts/draw_pen/draw_pen.yy",},},
     {"id":{"name":"english_words","path":"scripts/english_words/english_words.yy",},},
     {"id":{"name":"erase","path":"scripts/erase/erase.yy",},},
+    {"id":{"name":"find_correct_word","path":"scripts/find_correct_word/find_correct_word.yy",},},
     {"id":{"name":"help","path":"scripts/help/help.yy",},},
     {"id":{"name":"inupiaq_numbers","path":"scripts/inupiaq_numbers/inupiaq_numbers.yy",},},
     {"id":{"name":"inupiaq_words","path":"scripts/inupiaq_words/inupiaq_words.yy",},},
@@ -111,8 +112,10 @@
     {"id":{"name":"loadChoice","path":"scripts/loadChoice/loadChoice.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"num_array_to_string","path":"scripts/num_array_to_string/num_array_to_string.yy",},},
+    {"id":{"name":"numbercheck","path":"scripts/numbercheck/numbercheck.yy",},},
     {"id":{"name":"numberConversionSwitch","path":"scripts/numberConversionSwitch/numberConversionSwitch.yy",},},
     {"id":{"name":"numbox_change","path":"scripts/numbox_change/numbox_change.yy",},},
+    {"id":{"name":"numbox_check","path":"scripts/numbox_check/numbox_check.yy",},},
     {"id":{"name":"numstringchange","path":"scripts/numstringchange/numstringchange.yy",},},
     {"id":{"name":"operation_change","path":"scripts/operation_change/operation_change.yy",},},
     {"id":{"name":"operation_controls","path":"scripts/operation_controls/operation_controls.yy",},},

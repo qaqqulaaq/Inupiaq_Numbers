@@ -21,8 +21,8 @@ function macros(){
 #macro FOURTEEN "akimia" + GDOT + "utai" + LDOT + "aq"
 #macro FIFTEEN "akimiaq"
 
-#macro TWENTY "i" + NTIL + "u" + NTIL + "" + NTIL + "aq "
-#macro FOURHUNDRED "i" + LDOT + "agi" + NTIL + NTIL + "aq "
+#macro TWENTY "i" + NTIL + "u" + NTIL + NTIL + "aq"
+#macro FOURHUNDRED "i" + LDOT + "agi" + NTIL + NTIL + "aq"
 
 #macro ALMOST "-" + GDOT + "utai" + LDOT + "aq"
 #macro PB20 "-kipiaq"

@@ -40,7 +40,7 @@ function reset(){
 			setnumber = 0;
 			linex = [];
 			liney = [];
-			if kaktovik == true with numbox {
+			if kaktovik with numbox {
 				number = 0;
 				correct = 0;
 			}
@@ -57,6 +57,10 @@ function reset(){
 			break;
 		
 		case number_toword:
+			if mode_number with numbox{
+				number = 0;
+				correct = 0;				
+			}
 			
 		case vocab_wordbuild:
 			shuffle_answers(level);

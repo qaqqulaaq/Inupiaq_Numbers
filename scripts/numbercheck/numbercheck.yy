@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"numbercheck",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"numbercheck",
+  "parent":{
+    "name":"Assemblers",
+    "path":"folders/Scripts/Words/Assemblers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

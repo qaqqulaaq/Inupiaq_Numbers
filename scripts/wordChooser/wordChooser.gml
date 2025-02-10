@@ -84,7 +84,7 @@ function wordChooser(_text){
 				case SIX:
 				case ALMOST:
 					array_delete(_allowedwords,0,array_length(_allowedwords))
-					break;;
+					break;
 			}		
 		
 	

@@ -26,6 +26,7 @@ function wordChooser(_text){
 					if !(word_array[_len - 1] == FIFTEEN or word_array[_len - 1] == TEN or word_array[_len - 1] == FIVE) array_delete(_allowedwords,9,3);
 					else array_delete(_allowedwords,10,2)
 					break;
+					
 				case PB20:
 					if !(word_array[_len - 1] == FIFTEEN or word_array[_len - 1] == TEN or word_array[_len - 1] == FIVE) array_delete(_allowedwords,8,4);
 					else array_delete(_allowedwords,9,3);
@@ -46,7 +47,7 @@ function wordChooser(_text){
 					else if array_get_index(word_array,PB20) != -1 array_delete(_allowedwords, 10, 2)
 					else if array_get_index(word_array,FOURHUNDRED) != -1 array_delete(_allowedwords,11,1)
 					else if array_get_index(word_array,PB400) != -1 array_delete(_allowedwords, 11, 1)
-					array_delete(_allowedwords, 3,6);		
+					array_delete(_allowedwords, 3,7);		
 					if word_array[_len] == FIVE{
 						array_pop(_allowedwords);
 						array_shift(_allowedwords);

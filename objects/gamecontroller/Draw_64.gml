@@ -9,8 +9,8 @@ draw_set_font(Words_24);
 
 
 //draw the level at the top of the screen
-if level < 10 draw_text(448,10,string(level));
-else draw_text(448,16,"R");
+if level < 10 draw_text(room_width div 2,16,string(level));
+else draw_text(room_width div 2,16,"R");
 
 switch room{
 	

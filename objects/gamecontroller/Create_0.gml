@@ -2,6 +2,9 @@
 // You can write your code in this editor
 
 //shared variables
+
+
+
 alarm[0] = 1;
 level = 1;
 correct_word = "";

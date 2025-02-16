@@ -1,11 +1,11 @@
 {
   "$GMFont":"",
-  "%Name":"Words_24",
+  "%Name":"Words_14",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":14,
   "ascenderOffset":1,
-  "bold":false,
+  "bold":true,
   "canGenerateBitmap":true,
   "charset":0,
   "first":0,
@@ -295,7 +295,7 @@
   "last":0,
   "lineHeight":18,
   "maintainGms1Font":false,
-  "name":"Words_24",
+  "name":"Words_14",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

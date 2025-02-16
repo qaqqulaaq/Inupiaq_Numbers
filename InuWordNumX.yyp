@@ -50,7 +50,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1100.0.713",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"InuWordNumX",
   "resources":[
@@ -61,7 +61,7 @@
     {"id":{"name":"Lucida_024","path":"fonts/Lucida_024/Lucida_024.yy",},},
     {"id":{"name":"Lucida_048","path":"fonts/Lucida_048/Lucida_048.yy",},},
     {"id":{"name":"Lucida_150","path":"fonts/Lucida_150/Lucida_150.yy",},},
-    {"id":{"name":"Words_14","path":"fonts/Words_14/Words_14.yy",},},
+    {"id":{"name":"Words_10","path":"fonts/Words_10/Words_10.yy",},},
     {"id":{"name":"Words_20","path":"fonts/Words_20/Words_20.yy",},},
     {"id":{"name":"Words_24","path":"fonts/Words_24/Words_24.yy",},},
     {"id":{"name":"Words_48","path":"fonts/Words_48/Words_48.yy",},},

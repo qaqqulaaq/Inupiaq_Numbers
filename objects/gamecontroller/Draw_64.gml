@@ -9,8 +9,8 @@ draw_set_font(Words_24);
 
 
 //draw the level at the top of the screen
-if level < 10 draw_text(448,10,string(level));
-else draw_text(448,16,"R");
+if level < 10 draw_text(room_width div 2,10,string(level));
+else draw_text(room_width div 2,16,"R");
 
 switch room{
 	
@@ -22,21 +22,23 @@ switch room{
 	
 		draw_set_font(InupiaqNumbers_150);
 		var _offset = 0;
+		var _ht = 542
+		var _wd = room_width div 2
 		//sets the offset and draws the line below each problem
 		switch (level){
-			case 1: _offset = 320; draw_line_width(350,425,550,425,16); break;
-			case 2: case 3: case 4: _offset = 240; draw_line_width(270,425,630,425,16) break;
-			case 5: _offset = 160; draw_line_width(190,425,710,425,16) break;
-			case 6: _offset = 80; draw_line_width(110,425,790,425,16) break;
-			case 7: draw_line_width(30,425,870,425,16); break;
+			case 1: _offset = _wd - 150; draw_line_width(_wd-120,_ht,_wd+120,_ht,16); break;
+			case 2: case 3: case 4: _offset = _wd - 230; draw_line_width(_wd-200,_ht,_wd+200,_ht,16) break;
+			case 5: _offset = _wd - 310; draw_line_width(_wd-280,_ht,_wd+280,_ht,16) break;
+			case 6: _offset = _wd - 390; draw_line_width(_wd-340,_ht,_wd+340,_ht,16) break;
+			case 7: _offset = _wd - 470; draw_line_width(_wd-420,_ht,_wd+420,_ht,16); break;
 			default: break;
 		}
 		//draws the text and sprite for the math operation
 		draw_set_valign(fa_top)
-		for (var _i = string_length(string1); _i >= 0; _i--) draw_text(288 - _offset + _i*160,50,string_char_at(string1,_i+1));
-		for (var _i = 0; _i < string_length(string2); _i++) draw_text(288 - _offset + _i*160,70+font_get_size(InupiaqNumbers_150),string_char_at(string2,_i+1));
-		if mathop == "plus" draw_sprite(spr_plus,0,_offset,150+font_get_size(InupiaqNumbers_150));
-		else if mathop == "minus" draw_sprite(spr_minus,0,_offset,150+font_get_size(InupiaqNumbers_150));
+		for (var _i = string_length(string1); _i >= 0; _i--) draw_text(_wd +80 - _offset + _i*160,100,string_char_at(string1,_i+1));
+		for (var _i = 0; _i < string_length(string2); _i++) draw_text(_wd + 80 - _offset + _i*160,140+font_get_size(InupiaqNumbers_150),string_char_at(string2,_i+1));
+		if mathop == "plus" draw_sprite(spr_plus,0,_offset,220+font_get_size(InupiaqNumbers_150));
+		else if mathop == "minus" draw_sprite(spr_minus,0,_offset,220+font_get_size(InupiaqNumbers_150));
 		//draws the marker for the player
 		for (var _i = 0; _i < array_length(linex); _i++){
 		draw_rectangle_color(linex[_i]-5,liney[_i]-5,linex[_i]+5,liney[_i]+5,c_red,c_red,c_red,c_red,false);
@@ -50,7 +52,7 @@ switch room{
 		}
 			
 		if not kaktovik{
-			draw_sprite(spr_numentry,0,550,550);
+			draw_sprite(spr_numentry,0,850,550);
 			draw_set_halign(fa_center)
 			draw_set_valign(fa_center)
 			draw_set_font(Words_48)
@@ -58,12 +60,12 @@ switch room{
 			if answered {
 				if totalAmount = setnumber draw_set_color(c_green);
 				else if answered draw_set_color(c_red);
-				draw_text(550,550,string(totalAmount));
+				draw_text(850,550,string(totalAmount));
 			}
 			
 			else {
 			draw_set_color(c_white);
-			draw_text(550,550,string(setnumber));
+			draw_text(850,550,string(setnumber));
 			}
 		}
 		break;
@@ -72,7 +74,7 @@ switch room{
 	case vocab_wordbuild:
 		draw_set_font(Words_24);
 		draw_set_color(c_yellow);
-		draw_text(450, 320, display_text);
+		draw_text(room_width div 2, 360, display_text);
 		break;
 	
 	default: break;
@@ -82,9 +84,9 @@ if helpmode {
 	//draws the canvas
 	
 	var _left = 30
-	var _right = 870
+	var _right = room_width - 30
 	var _top = 50
-	var _bottom = 610
+	var _bottom = room_height - 50
 	var _border = 10
 	var _margin = 30
 	var _spr_off = 72 

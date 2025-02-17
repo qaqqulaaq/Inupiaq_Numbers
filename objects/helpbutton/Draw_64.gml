@@ -3,9 +3,9 @@
 
 if menuhelp{
 	var _left = 10
-	var _right = 890
+	var _right = room_width - 10
 	var _top = 10
-	var _bottom = 640
+	var _bottom = room_height - 10
 	var _border = 10
 	var _margin = 30
 	

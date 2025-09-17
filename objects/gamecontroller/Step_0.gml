@@ -23,7 +23,7 @@ else if helpmode and (keyboard_check_pressed(vk_anykey) or mouse_check_button_re
 
 else if not helpmode{
 //goes to the main menu
-	if keyboard_check_pressed(vk_escape) room_goto(main_menu);
+	if keyboard_check_pressed(vk_escape) or (position_meeting(mouse_x,mouse_y,back_button) and mouse_check_button_released(mb_left)) room_goto(main_menu);
 	//activates the help screen
 	else if keyboard_check_pressed(vk_f1) or (position_meeting(mouse_x,mouse_y,helpbutton) and mouse_check_button_released(mb_left))  help();
 	//Enters the answer or moves to the next problem

@@ -18,8 +18,8 @@ function inupiaq_words(){
 	word6 = "itchaksrat ";
 	word9 = "quli" + NHAN + "" + NHAN + "u" + GDOT + "utai" + LDOT + "aq"
 	word14 = "akimia" + GDOT + "utai" + LDOT + "aq"
-	word20 = "i" + NTIL + "u" + NTIL + "" + NTIL + "aq ";
-	word400 = "i" + LDOT + "agi" + NTIL + "" + NTIL + "aq ";
+	word20 = "i" + NTIL + "ui" + NTIL + "" + NTIL + "aq ";
+	word400 = "i" + LDOT + "agi" + NTIL + NTIL + "aq ";
 	
 
 	

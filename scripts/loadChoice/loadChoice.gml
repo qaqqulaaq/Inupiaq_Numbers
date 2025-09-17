@@ -115,7 +115,7 @@ function loadChoice(_numlistraw, _maxno){
 		
 		if string_pos(FOURHUNDRED,_ranword[0]) !=0 _ranword[0] = string_insert("\n",_ranword[0], string_pos(FOURHUNDRED,_ranword[0])+9);
 		else if string_last_pos("agliaq",_ranword[0]) != 0 _ranword[0] = string_insert("\n",_ranword[0],string_last_pos("agliaq",_ranword[0])+6);
-		if string_pos(TWENTY,_ranword[0]) != 0 _ranword[0] = string_insert("\n",_ranword[0],string_pos(TWENTY,_ranword[0])+7);
+		if string_pos(TWENTY,_ranword[0]) != 0 _ranword[0] = string_insert("\n",_ranword[0],string_pos(TWENTY,_ranword[0])+8);
 		else if string_last_pos("kipiaq",_ranword[0]) != 0 _ranword[0] = string_insert("\n",_ranword[0],string_last_pos("kipiaq",_ranword[0])+6);
 		_ranword[0] = string_replace_all(_ranword[0],"\n ","\n")
 	}

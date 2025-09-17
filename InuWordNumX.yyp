@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"InuWordNumX",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -46,11 +46,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1100.0.713",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"InuWordNumX",
   "resources":[
@@ -67,6 +68,7 @@
     {"id":{"name":"Words_48","path":"fonts/Words_48/Words_48.yy",},},
     {"id":{"name":"Ex","path":"notes/Ex/Ex.yy",},},
     {"id":{"name":"PING!","path":"notes/PING!/PING!.yy",},},
+    {"id":{"name":"back_button","path":"objects/back_button/back_button.yy",},},
     {"id":{"name":"choice_numberconv","path":"objects/choice_numberconv/choice_numberconv.yy",},},
     {"id":{"name":"choice_numberop","path":"objects/choice_numberop/choice_numberop.yy",},},
     {"id":{"name":"choice_numbertoword","path":"objects/choice_numbertoword/choice_numbertoword.yy",},},
@@ -130,6 +132,7 @@
     {"id":{"name":"choice_press","path":"sprites/choice_press/choice_press.yy",},},
     {"id":{"name":"spr_arnum_box","path":"sprites/spr_arnum_box/spr_arnum_box.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
+    {"id":{"name":"spr_back","path":"sprites/spr_back/spr_back.yy",},},
     {"id":{"name":"spr_convert","path":"sprites/spr_convert/spr_convert.yy",},},
     {"id":{"name":"spr_eraser","path":"sprites/spr_eraser/spr_eraser.yy",},},
     {"id":{"name":"spr_help","path":"sprites/spr_help/spr_help.yy",},},

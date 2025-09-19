@@ -5,7 +5,7 @@ if menuhelp{
 	var _left = 10
 	var _right = 890
 	var _top = 10
-	var _bottom = 640
+	var _bottom = 670
 	var _border = 10
 	var _margin = 30
 	

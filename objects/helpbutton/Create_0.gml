@@ -10,7 +10,8 @@ _infotext += "\"Number Conversion\" contains numbers that must be converted from
 _infotext += "\"Numbers to Words\" requires the translation between words and numberical representation. \n "
 _infotext += $"\"Multiple Choice Vocabulary\" is a multichoice vocabulary exercise for numbers in I{NTIL}upiaq. \n "
 _infotext += "\"Word Building Vocabulary\" requires for the words to be built using the base words and post-bases. \n \n "
-_infotext += "Further instructions can be found in each of the game modes."
+_infotext += "Further instructions can be found in each of the game modes. \n \n "
+_infotext += "This app was developed by Douglas Collins"
 
 var _textarray = string_split(_infotext," ")
 

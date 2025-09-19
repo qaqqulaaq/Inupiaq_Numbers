@@ -30,7 +30,7 @@ function proceed(){
 				}
 				
 				else{
-					if string_replace_all(string_lower(display_text),"\n"," ") == string_replace_all(string_lower(correct_word),"\n"," ") question.say = "Aarigaa!";
+					if string_replace_all(string_lower(display_text),"\n"," ") == string_replace_all(string_lower(string_trim_end(correct_word,["\n"," "])),"\n"," ") question.say = "Aarigaa!";
 					else question.say = "Naumi.\n" + correct_word;					
 				}
 				break;

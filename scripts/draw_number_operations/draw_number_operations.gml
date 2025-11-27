@@ -28,7 +28,7 @@ function draw_number_operations(){
 	draw_line_width(_line_start,_line_height,_line_end,_line_height,16)
 
 	if mathop == "plus" draw_sprite(spr_plus,0,_string_left - 160,112 + string_height(string1));
-	else if mathop == "minus" draw_sprite(spr_minus,0,_offset,150+font_get_size(InupiaqNumbers_150));
+	else if mathop == "minus" draw_sprite(spr_minus,0,_string_left - 160,112 + string_height(string1));
 	
 	
 	

@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 if menuhelp{
-	var _left = 10
-	var _right = 890
-	var _top = 10
-	var _bottom = 670
+	var _left = 30
+	var _right = room_width - 30
+	var _top = 30
+	var _bottom = room_height - 30
 	var _border = 10
 	var _margin = 30
 	
@@ -18,5 +18,5 @@ if menuhelp{
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	
-	draw_text(_left + _margin, _top + _margin , text);
+	draw_text_ext(_left + _margin, _top + _margin , text, 40, room_width - 160);
 }

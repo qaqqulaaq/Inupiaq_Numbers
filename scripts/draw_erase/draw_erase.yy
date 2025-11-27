@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_erase",
   "parent":{
-    "name":"Drawing",
-    "path":"folders/Scripts/Controller/Drawing.yy",
+    "name":"Draw Tool",
+    "path":"folders/Scripts/Controller/Draw Tool.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

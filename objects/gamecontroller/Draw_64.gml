@@ -22,13 +22,14 @@ switch room{
 	case vocab_wordbuild:
 		draw_set_font(Words_24);
 		draw_set_color(c_yellow);
-		draw_text(450, 320, display_text);
+		draw_text(room_width div 2, 320, display_text);
 		break;
 	
 	default: break;
 }
 
 if helpmode {
+	draw_help();
 }
 
 

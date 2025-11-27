@@ -5,11 +5,11 @@ function draw_help(){
 	
 	var _left = 30
 	var _right = room_width - 30
-	var _top = 50
-	var _bottom = room_height = 30
+	var _top = 30
+	var _bottom = room_height - 30
 	var _border = 10
-	var _margin = 30
-	var _spr_off = 72 
+	var _margin = 64
+	var _spr_off = 90
 	var _line = 50
 	
 	draw_rectangle_color(_left,_top,_right,_bottom,c_white,c_white,c_white,c_white,false);
@@ -21,10 +21,9 @@ function draw_help(){
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	
+	
 	if page == 0 and (room == number_operations){
-		if room == number_operations draw_text(_left + _margin, _top + _margin , "The goal of this exercise is to perform basic\noperations using the Kaktovik numeral system.");
-		
-		draw_text(_left + _margin, _top + _margin + _line*2 , "Clicking on the bottom portion of the number box will\nincrease the number by one, while clicking the top\nportion of the number box will increase the number\nby 5. Right clicking will decrease the number instead.");
+		draw_text_ext(_left + _margin, _top + _margin , "The goal of this exercise is to perform basic operations using the Kaktovik numeral system.\n\nClicking on the bottom portion of the number box will increase the number by one, while clicking the top portion of the number box will increase the number by 5. Right clicking will decrease the number instead.",40,room_width - 160);
 		
 		draw_sprite(spr_numbox,0,room_width/2,_top + _margin + _line * 5.5);
 		draw_set_halign(fa_center);
@@ -35,9 +34,7 @@ function draw_help(){
 	}
 	
 	else if page == 0 and room == number_conversions{
-		if room == number_conversions draw_text(_left + _margin, _top + _margin , "The goal of this exercise is to convert between\nArabic numerals and Kaktovik numerals.");
-		
-		draw_text(_left + _margin, _top + _margin + _line*2 , "Clicking on the bottom portion of the number box will\nincrease the number by one, while clicking the top\nportion of the number box will increase the number\nby 5. Right clicking will decrease the number instead.");
+		draw_text_ext(_left + _margin, _top + _margin , "The goal of this exercise is to convert between Arabic numerals and Kaktovik numerals.\n\nClicking on the bottom portion of the number box will increase the number by one, while clicking the top portion of the number box will increase the number by 5. Right clicking will decrease the number instead.",40,room_width - 160);
 		
 		draw_sprite(spr_numbox,0,room_width/5,_top + _margin + _line * 5.5);
 		draw_set_halign(fa_center);
@@ -51,8 +48,7 @@ function draw_help(){
 	}
 	
 	else if page == 0 and room == vocab_multichoice{
-		draw_text(_left + _margin, _top + _margin , "The goal of this exercise is to practice vocabulary by\nselecting the correct word.");
-		draw_text(_left + _margin, _top + _margin + _line*2 ,"You may click on the correct answer, or press\nthe number key that corresponds with the answer as\nfollows:");
+		draw_text_ext(_left + _margin, _top + _margin , "The goal of this exercise is to practice vocabulary by selecting the correct word. You may click on the correct answer, or press the number key that corresponds with the answer as follows:",40,room_width - 160);
 		
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
@@ -84,14 +80,13 @@ function draw_help(){
 	}
 
 	else if page == 0 and room == vocab_wordbuild{
-		draw_text(_left + _margin, _top + _margin , "The goal of this exercise is to practice vocabulary by\nbuilding the correct word.");
-		draw_text(_left + _margin, _top + _margin + _line*2 ,"Each word or postbase that you click on will be added\nto your answer. Once you have assembled the correct\nword, enter it to check your answer.");
+		draw_text_ext(_left + _margin, _top + _margin , "The goal of this exercise is to practice vocabulary by building the correct word. Each word or postbase that you click on will be added to your answer. Once you have assembled the correct word, enter it to check your answer.",40,room_width - 160);
 	}
 	
 	else if page == 0 and room == number_toword{
-		draw_text(_left + _margin, _top + _margin , "The goal of this exercise is to bridge words and numbers.");
-		draw_text(_left + _margin, _top + _margin + _line*1, "Set the number box to match the displayed word, or\nbuild the word to match the displayed number.");
-		draw_text(_left + _margin, _top + _margin + _line*3 , "Clicking on the bottom portion of the number box will\nincrease the number by one, while clicking the top\nportion of the number box will increase the number\nby 5.");
+		draw_text_ext(_left + _margin, _top + _margin , "The goal of this exercise is to bridge words and numbers.\n\nSet the number box to match the displayed word, or build the word to match the displayed number. Clicking on the bottom portion of the number box will increase the number by one, while clicking the top portion of the number box will increase the number by 5. Right clicking these portions will decrease the number instead.",40,room_width-160);
+		draw_text(_left + _margin, _top + _margin + _line*1, "");
+		draw_text(_left + _margin, _top + _margin + _line*3 , "");
 		
 		draw_sprite(spr_numbox,0,room_width/2,_top + _margin + _line * 5.5);
 		draw_set_halign(fa_center);

@@ -35,7 +35,7 @@ function wordBuilder(_array){
 	for (var _i = 0; _i < array_length(_raw); _i++){
 		_new_text += _raw[_i]
 		_num += string_length(_raw[_i])
-		if _num > 18{
+		if _num > 32{
 			_new_text += "\n"
 			_num = 0
 		}

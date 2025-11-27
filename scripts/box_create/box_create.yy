@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"box_create",
   "parent":{
-    "name":"Generic Functions",
-    "path":"folders/Scripts/Numbers/Generic Functions.yy",
+    "name":"Number Controls",
+    "path":"folders/Scripts/Controller/Number Controls.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

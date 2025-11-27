@@ -4,8 +4,8 @@ function box_create(_level){
 	instance_destroy(numbox);
 
 	//sets the generic placement, that can be changed more easily later
-	var _x = 448
-	var _y = 448
+	var _x = room_width div 2
+	var _y = room_height - sprite_get_height(spr_numbox) - 32
 	//two separate switches due to two separate level systems
 	//both create one through five number boxes
 	if room == number_operations switch _level{

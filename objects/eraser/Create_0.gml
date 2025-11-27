@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-dir_right = true
+x = room_width - 32
+y = room_height - 160

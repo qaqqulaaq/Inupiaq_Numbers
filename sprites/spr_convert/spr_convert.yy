@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_convert",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"082bd70f-8c8d-4bca-b2f1-631694669a13","name":"082bd70f-8c8d-4bca-b2f1-631694669a13","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c78fad06-7f80-4bd4-81e5-7ef730b00821","name":"c78fad06-7f80-4bd4-81e5-7ef730b00821","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"082bd70f-8c8d-4bca-b2f1-631694669a13","name":"082bd70f-8c8d-4bca-b2f1-631694669a13","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c78fad06-7f80-4bd4-81e5-7ef730b00821","name":"c78fad06-7f80-4bd4-81e5-7ef730b00821","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -24,7 +24,7 @@
   ],
   "name":"spr_convert",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Icons",
     "path":"folders/Sprites/Input/Icons.yy",
@@ -81,7 +81,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":16,
     "yorigin":0,
   },
   "swatchColours":null,

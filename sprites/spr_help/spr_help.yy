@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_help",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"621d15b8-28b3-41bb-8a81-8d2bc1dddb0a","name":"621d15b8-28b3-41bb-8a81-8d2bc1dddb0a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"621d15b8-28b3-41bb-8a81-8d2bc1dddb0a","name":"621d15b8-28b3-41bb-8a81-8d2bc1dddb0a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -23,7 +23,7 @@
   ],
   "name":"spr_help",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Icons",
     "path":"folders/Sprites/Input/Icons.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":16,
     "yorigin":0,
   },
   "swatchColours":null,

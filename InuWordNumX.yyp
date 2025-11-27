@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"InuWordNumX",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -29,6 +29,7 @@
     {"$GMFolder":"","%Name":"General Controls","folderPath":"folders/Scripts/Controller/General Controls.yy","name":"General Controls","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Number Controls","folderPath":"folders/Scripts/Controller/Number Controls.yy","name":"Number Controls","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Vocab Controls","folderPath":"folders/Scripts/Controller/Vocab Controls.yy","name":"Vocab Controls","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Drawing","folderPath":"folders/Scripts/Drawing.yy","name":"Drawing","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Numbers","folderPath":"folders/Scripts/Numbers.yy","name":"Numbers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Contoller Specific","folderPath":"folders/Scripts/Numbers/Contoller Specific.yy","name":"Contoller Specific","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Generic Functions","folderPath":"folders/Scripts/Numbers/Generic Functions.yy","name":"Generic Functions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -51,7 +52,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"InuWordNumX",
   "resources":[
@@ -78,7 +79,8 @@
     {"id":{"name":"eraser","path":"objects/eraser/eraser.yy",},},
     {"id":{"name":"gamecontroller","path":"objects/gamecontroller/gamecontroller.yy",},},
     {"id":{"name":"helpbutton","path":"objects/helpbutton/helpbutton.yy",},},
-    {"id":{"name":"level_arrow","path":"objects/level_arrow/level_arrow.yy",},},
+    {"id":{"name":"level_arrow_left","path":"objects/level_arrow_left/level_arrow_left.yy",},},
+    {"id":{"name":"level_arrow_right","path":"objects/level_arrow_right/level_arrow_right.yy",},},
     {"id":{"name":"nextbox","path":"objects/nextbox/nextbox.yy",},},
     {"id":{"name":"numbox","path":"objects/numbox/numbox.yy",},},
     {"id":{"name":"numbox0","path":"objects/numbox0/numbox0.yy",},},
@@ -103,6 +105,9 @@
     {"id":{"name":"choosebox","path":"scripts/choosebox/choosebox.yy",},},
     {"id":{"name":"convchange","path":"scripts/convchange/convchange.yy",},},
     {"id":{"name":"draw_erase","path":"scripts/draw_erase/draw_erase.yy",},},
+    {"id":{"name":"draw_help","path":"scripts/draw_help/draw_help.yy",},},
+    {"id":{"name":"draw_number_conversions","path":"scripts/draw_number_conversions/draw_number_conversions.yy",},},
+    {"id":{"name":"draw_number_operations","path":"scripts/draw_number_operations/draw_number_operations.yy",},},
     {"id":{"name":"draw_pen","path":"scripts/draw_pen/draw_pen.yy",},},
     {"id":{"name":"english_words","path":"scripts/english_words/english_words.yy",},},
     {"id":{"name":"erase","path":"scripts/erase/erase.yy",},},
@@ -125,6 +130,7 @@
     {"id":{"name":"random_num_generator","path":"scripts/random_num_generator/random_num_generator.yy",},},
     {"id":{"name":"reset","path":"scripts/reset/reset.yy",},},
     {"id":{"name":"shuffleAnswers","path":"scripts/shuffleAnswers/shuffleAnswers.yy",},},
+    {"id":{"name":"system","path":"scripts/system/system.yy",},},
     {"id":{"name":"word_box_create","path":"scripts/word_box_create/word_box_create.yy",},},
     {"id":{"name":"wordBuilder","path":"scripts/wordBuilder/wordBuilder.yy",},},
     {"id":{"name":"wordChooser","path":"scripts/wordChooser/wordChooser.yy",},},

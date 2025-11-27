@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_arrow",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"89813129-0720-4ce1-b624-ff86a44c8f2c","name":"89813129-0720-4ce1-b624-ff86a44c8f2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7513f269-d634-4cec-a1d0-f7963270e2ed","name":"7513f269-d634-4cec-a1d0-f7963270e2ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"89813129-0720-4ce1-b624-ff86a44c8f2c","name":"89813129-0720-4ce1-b624-ff86a44c8f2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7513f269-d634-4cec-a1d0-f7963270e2ed","name":"7513f269-d634-4cec-a1d0-f7963270e2ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -24,7 +24,7 @@
   ],
   "name":"spr_arrow",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Large",
     "path":"folders/Sprites/Input/Large.yy",
@@ -81,7 +81,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":16,
     "yorigin":0,
   },
   "swatchColours":null,

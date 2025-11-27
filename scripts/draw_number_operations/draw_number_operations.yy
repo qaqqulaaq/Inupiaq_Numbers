@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_number_operations",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_number_operations",
+  "parent":{
+    "name":"Drawing",
+    "path":"folders/Scripts/Drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

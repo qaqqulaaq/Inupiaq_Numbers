@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_question_box",
   "bboxMode":0,
   "bbox_bottom":223,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f9f51e33-38bd-4337-bf9a-19a545e1889c","name":"f9f51e33-38bd-4337-bf9a-19a545e1889c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f9f51e33-38bd-4337-bf9a-19a545e1889c","name":"f9f51e33-38bd-4337-bf9a-19a545e1889c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

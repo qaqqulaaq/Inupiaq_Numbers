@@ -41,3 +41,6 @@ for (var _i = 0; _i < array_length(_textarray); _i++){
 		}
 	}
 }
+
+x = room_width - 32
+y = 22

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"level_arrow",
+  "%Name":"level_arrow_left",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"level_arrow",
+  "name":"level_arrow_left",
   "overriddenProperties":[],
   "parent":{
     "name":"controlller objects",

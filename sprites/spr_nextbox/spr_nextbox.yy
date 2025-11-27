@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_nextbox",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"76c82317-d53a-4d31-81b3-31434ffce001","name":"76c82317-d53a-4d31-81b3-31434ffce001","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"cc28eb06-8ae2-42d6-9d45-6d6d6eceb2bf","name":"cc28eb06-8ae2-42d6-9d45-6d6d6eceb2bf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"76c82317-d53a-4d31-81b3-31434ffce001","name":"76c82317-d53a-4d31-81b3-31434ffce001","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cc28eb06-8ae2-42d6-9d45-6d6d6eceb2bf","name":"cc28eb06-8ae2-42d6-9d45-6d6d6eceb2bf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -24,7 +24,7 @@
   ],
   "name":"spr_nextbox",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Icons",
     "path":"folders/Sprites/Input/Icons.yy",
@@ -81,7 +81,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":16,
     "yorigin":0,
   },
   "swatchColours":null,

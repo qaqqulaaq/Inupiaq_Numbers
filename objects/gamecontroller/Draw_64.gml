@@ -2,15 +2,24 @@
 
 //Sets to white, center and top by default
 
+
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_set_font(Words_24);
+
 
 
 //draw the level at the top of the screen
-if level < 10 draw_text(room_width div 2 ,16,string(level));
-else draw_text(room_width div 2,16,"R");
+if room == main_menu{
+	draw_set_font(Words_48);
+	draw_text(room_width div 2, 96, $"I{NTIL}upiaq Numbers");	
+}
+
+else{
+	draw_set_font(Words_24);
+	if level < 10 draw_text(room_width div 2 ,16,string(level));
+	else draw_text(room_width div 2,16,"R");
+}
 
 switch room{
 	

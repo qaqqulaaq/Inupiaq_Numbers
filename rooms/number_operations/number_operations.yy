@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_6C572EF8","path":"rooms/number_operations/number_operations.yy",},
     {"name":"inst_67892DF8","path":"rooms/number_operations/number_operations.yy",},
     {"name":"inst_2B15C1C5","path":"rooms/number_operations/number_operations.yy",},
     {"name":"inst_41537C17","path":"rooms/number_operations/number_operations.yy",},
@@ -19,7 +18,6 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_6C572EF8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C572EF8","objectId":{"name":"gamecontroller","path":"objects/gamecontroller/gamecontroller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_2B15C1C5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B15C1C5","objectId":{"name":"operation","path":"objects/operation/operation.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":16.0,},
         {"$GMRInstance":"v4","%Name":"inst_67892DF8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_67892DF8","objectId":{"name":"nextbox","path":"objects/nextbox/nextbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":848.0,"y":608.0,},
         {"$GMRInstance":"v4","%Name":"inst_41537C17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41537C17","objectId":{"name":"eraser","path":"objects/eraser/eraser.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":848.0,"y":544.0,},

@@ -11,9 +11,9 @@ helpmode = false;
 page = 0;
 drawing = false;
 
-switch room {
+
 	//number specific variables
-	case number_operations:
+
 		mathop = "plus";
 		array1 = [];
 		array2 = [];
@@ -24,26 +24,24 @@ switch room {
 		setnumber = 0;
 		totalAmount = 0;
 		_ansarray = [];
-		break;
 
-	case number_conversions:
+
+
 		kaktovik = true
 		linex = [];
 		liney = [];
 		setnumber = 0;
 		totalAmount = 0;
-		_ansarray = [];
-		break;
+
 		
-	case number_toword:
+
 		mode_number = true;
 	//word specific variables
-	case vocab_wordbuild:
+
 		word_array = [];
 		display_text="";
 		wordprogress = 0;
-	case vocab_multichoice:
+
 		inupiaq_words();
 		english_words();
-		break;
-}
+

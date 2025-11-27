@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_67892DF8_1_1","path":"rooms/number_toword/number_toword.yy",},
-    {"name":"inst_4B33C16F_1","path":"rooms/number_toword/number_toword.yy",},
     {"name":"inst_6CF54F86_1","path":"rooms/number_toword/number_toword.yy",},
     {"name":"inst_76ECB32_1","path":"rooms/number_toword/number_toword.yy",},
     {"name":"inst_5E847C8D_1","path":"rooms/number_toword/number_toword.yy",},
@@ -21,7 +20,6 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_67892DF8_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_67892DF8_1_1","objectId":{"name":"nextbox","path":"objects/nextbox/nextbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":848.0,"y":608.0,},
-        {"$GMRInstance":"v4","%Name":"inst_4B33C16F_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B33C16F_1","objectId":{"name":"gamecontroller","path":"objects/gamecontroller/gamecontroller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_6CF54F86_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6CF54F86_1","objectId":{"name":"question","path":"objects/question/question.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":192.0,},
         {"$GMRInstance":"v4","%Name":"inst_76ECB32_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76ECB32_1","objectId":{"name":"eraser","path":"objects/eraser/eraser.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":848.0,"y":544.0,},
         {"$GMRInstance":"v4","%Name":"inst_5E847C8D_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E847C8D_1","objectId":{"name":"numbox0","path":"objects/numbox0/numbox0.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":448.0,},

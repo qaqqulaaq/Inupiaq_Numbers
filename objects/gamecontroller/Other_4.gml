@@ -46,6 +46,16 @@ if room == main_menu {
 	word_array = [];
 	display_text="";
 	wordprogress = 0;
+	
+	
+	
+	var saylist	=[ "Number Conversions", "Number Operations", "Numbers to Words", "Word Building\nVocabulary", "Multiple Choice\nVocabulary"]
+
+	for (var i = 0; i < array_length(saylist); i++){
+		instance_create_layer(0,0,"Instances",menu_choice,{say: saylist[i]});
+	}
+		
+	
 }
 
 else alarm[0] = 1;

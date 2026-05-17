@@ -84,6 +84,7 @@
     {"name":"level_change","order":1,"path":"scripts/level_change/level_change.yy",},
     {"name":"loadChoice","order":1,"path":"scripts/loadChoice/loadChoice.yy",},
     {"name":"macros","order":5,"path":"scripts/macros/macros.yy",},
+    {"name":"menu_load","order":5,"path":"scripts/menu_load/menu_load.yy",},
     {"name":"numbercheck","order":5,"path":"scripts/numbercheck/numbercheck.yy",},
     {"name":"numbox_check","order":3,"path":"scripts/numbox_check/numbox_check.yy",},
     {"name":"numstringchange","order":2,"path":"scripts/numstringchange/numstringchange.yy",},

@@ -47,13 +47,19 @@ if room == main_menu {
 	display_text="";
 	wordprogress = 0;
 	
-	
-	
-	var saylist	=[ "Number Conversions", "Number Operations", "Numbers to Words", "Word Building\nVocabulary", "Multiple Choice\nVocabulary"]
+
+
+	var saylist	=["Numbers", "Vocabulary"]
 
 	for (var i = 0; i < array_length(saylist); i++){
 		instance_create_layer(0,0,"Instances",menu_choice,{say: saylist[i]});
-	}
+	}	
+	
+	//var saylist	=[ "Number Conversions", "Number Operations", "Numbers to Words", "Word Building\nVocabulary", "Multiple Choice\nVocabulary"]
+
+	//for (var i = 0; i < array_length(saylist); i++){
+	//	instance_create_layer(0,0,"Instances",menu_choice,{say: saylist[i]});
+	//}
 		
 	
 }

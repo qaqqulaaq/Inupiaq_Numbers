@@ -116,6 +116,7 @@
     {"id":{"name":"level_change","path":"scripts/level_change/level_change.yy",},},
     {"id":{"name":"loadChoice","path":"scripts/loadChoice/loadChoice.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
+    {"id":{"name":"menu_load","path":"scripts/menu_load/menu_load.yy",},},
     {"id":{"name":"num_array_to_string","path":"scripts/num_array_to_string/num_array_to_string.yy",},},
     {"id":{"name":"numbercheck","path":"scripts/numbercheck/numbercheck.yy",},},
     {"id":{"name":"numberConversionSwitch","path":"scripts/numberConversionSwitch/numberConversionSwitch.yy",},},

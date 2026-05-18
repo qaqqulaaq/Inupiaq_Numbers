@@ -8,6 +8,28 @@ if room == vocab_wordbuild{
 	word_box_create();
 }
 
+if room == vocab_multichoice{
+	with choice1{
+		x = room_width div 3
+		y = room_height div 2	
+	}
+	
+	with choice2{
+		x = room_width *2 div 3
+		y = room_height div 2	
+	}
+	
+	with choice3{
+		x = room_width div 3
+		y = room_height *3 div 4	
+	}
+	
+	with choice4{
+		x = room_width*2 div 3
+		y = room_height *3 div 4	
+	}
+}
+
 if room == main_menu {
 	
 	level = 1;
@@ -48,12 +70,9 @@ if room == main_menu {
 	wordprogress = 0;
 	
 
+	menu_load(["Introduction","Numbers", "Vocabulary"])
 
-	var saylist	=["Numbers", "Vocabulary"]
 
-	for (var i = 0; i < array_length(saylist); i++){
-		instance_create_layer(0,0,"Instances",menu_choice,{say: saylist[i]});
-	}	
 	
 	//var saylist	=[ "Number Conversions", "Number Operations", "Numbers to Words", "Word Building\nVocabulary", "Multiple Choice\nVocabulary"]
 

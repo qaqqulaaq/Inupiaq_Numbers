@@ -26,13 +26,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"say","filters":[],"listItems":[],"multiselect":false,"name":"say","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_question_box",
-    "path":"sprites/spr_question_box/spr_question_box.yy",
+    "name":"dialog_box",
+    "path":"sprites/dialog_box/dialog_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,

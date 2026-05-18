@@ -62,10 +62,20 @@ else if not helpmode{
 			else if (keyboard_check_pressed(ord("4"))) or (position_meeting(mouse_x,mouse_y,choice4) and mouse_check_button_released(mb_left)) with choice4 choosebox();
 		}
 	
-		else if room = number_conversions{
+		else if room == number_conversions{
 			if position_meeting(mouse_x, mouse_y, obj_arnum) and mouse_check_button_pressed(mb_left) numstringchange((instance_position(mouse_x,mouse_y,obj_arnum).num))
 			else if keyboard_check_pressed(vk_backspace) numstringchange("del")
 			else if keyboard_check_pressed(vk_anykey) numstringchange(keyboard_lastchar)
+		}
+		
+		else if room == lessons and lessoncontroller.review{
+			if mouse_check_button_released(mb_left){
+				var _id = instance_position(mouse_x,mouse_y,choice)
+				if _id != noone{
+					if _id.num == lessoncontroller.ind _id.right = 1
+					else _id.right = 2;
+				}
+			}
 		}
 	}
 }

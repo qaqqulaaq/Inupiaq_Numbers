@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if not gamecontroller.answered draw_sprite(sprite_index,0,x,y)
-else draw_sprite(sprite_index,1,x,y)
+
+
+if gamecontroller.answered or (room == lessons and lessoncontroller.timer < 9999) draw_sprite(sprite_index,1,x,y)
+else draw_sprite(sprite_index,0,x,y)

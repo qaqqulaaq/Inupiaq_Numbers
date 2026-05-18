@@ -1,6 +1,8 @@
 /// @description 
 // You can write your code in this editor
 
+randomize();
+
 //shared variables
 alarm[0] = 1;
 level = 1;
@@ -45,3 +47,5 @@ drawing = false;
 		inupiaq_words();
 		english_words();
 
+//lesson variables
+lesson = 0

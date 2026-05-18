@@ -2,9 +2,35 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function proceed(){
 	with gamecontroller{
-		if not answered{
+		
+		if room == lessons and not lessoncontroller.review{
+			with lessoncontroller{
+				
+				if timer < 9999 timer = 9999
+				else{
+								
+					timer = 0
+					if progress < 3{
+						progress++
+						fullword = ""
+						for (var i = 0; i < array_length(word[progress]); i++){	
+						fullword += word[progress][i];	
+						}
+					}
+					
+					else{
+						review = true
+						review_setup()
+					}
+				}
+			}
+		}
+		
+		else if not answered{
 			
-			if  room != vocab_multichoice answered = true
+			if  room != vocab_multichoice {
+				answered = true
+			}
 	
 			switch room {
 		

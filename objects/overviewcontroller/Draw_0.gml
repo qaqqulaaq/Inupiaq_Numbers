@@ -6,7 +6,7 @@ var _time = game_get_speed(gamespeed_fps)*.25
 
 for (var i = 0; i < array_length(word) - 1; i++){
 	
-	if timer > times[i]{
+	if timer > times[i][0]{
 		for (var j = 0; j < array_length(word[i]); j++){
 
 			var _wordpart = ""
@@ -21,8 +21,12 @@ for (var i = 0; i < array_length(word) - 1; i++){
 			else _col = make_colour_rgb(50,69,255)
 	
 			draw_set_color(_col);
-			if j == 0 draw_set_alpha(clamp( (timer - times[i] - (j+1)*_time) / _time  ,0,1))
-			else draw_set_alpha(clamp( (timer - times[i] - (j+5)*_time) / _time  ,0,1))
+			
+			
+			
+			
+			if j == 0 draw_set_alpha(clamp( (timer - times[i][j] - _time) / _time  ,0,1))
+			else draw_set_alpha(clamp( (timer - times[i][j] - _time) / _time  ,0,1))
 	
 			
 			if i < 10{

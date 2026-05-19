@@ -22,11 +22,30 @@ word = [["1. ", "a","tau","siq"],
 		["20. ","i","ñuiñ","ñaq"],
 		["0. ","suit","chuq"]]
 		
-timing = [[10,30,10]
-			]
+timing = [[60,10,20],				//1
+		  [60,25],					//2
+		  [60,15,15],				//3
+		  [60,15,15],				//4
+		  [60,20,15],				//5
+		  [60,25,25],				//6
+		  [60,10,10,40,25],			//7
+		  [60,10,10,40,15,15],		//8
+		  [60,15,15,15,15,30],		//9
+		  [60,15],					//10
+		  [60,15,25,15,25],			//11
+		  [60,15,25,25],			//12
+		  [60,15,25,15,15],			//13
+		  [60,15,15,15,15,40,15],	//14
+		  [60,15,15],			//15
+		  [60,15,15,35,20,20],	//16
+		  [60,15,15,40,25],		//17
+		  [60,15,15,40,15,15],	//18
+		  [60,25,25,25,25,25],		//19
+		  [60,25,25],				//20
+		  [60,25]]					//0
 		
 fullword = []
-times = [0]
+times = [[60]]
 
 for (var i = 0; i < array_length(word);  i++){
 	var _fullword = ""
@@ -34,5 +53,16 @@ for (var i = 0; i < array_length(word);  i++){
 		_fullword += word[i][j]
 	}
 	array_push(fullword, _fullword);
-	if i > 0 array_push(times,times[i-1] + (array_length(word[i-1])+8)*game_get_speed(gamespeed_fps)*0.25)
+	
+	var _snd = find_sound(i)
+	array_push(times,[round(audio_sound_length(_snd) + 2) * game_get_speed(gamespeed_fps) +times[i][0]])
+	
+	for (var j = 0; j < array_length(timing[i]); j++){
+		array_push(times[i],times[i][j]+timing[i][j])
+	}
+	
+	
+	//if i > 0 array_push(times,times[i-1] + (array_length(word[i-1])+8)*game_get_speed(gamespeed_fps)*0.25)
 }
+
+show_debug_message(string(times))

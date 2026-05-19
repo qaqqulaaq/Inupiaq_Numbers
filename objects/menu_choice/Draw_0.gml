@@ -9,7 +9,7 @@ if set_pressed{
 }
 
 else{
-	if mouse_check_button(mb_left) and position_meeting(mouse_x,mouse_y,id){	
+	if mouse_check_button(mb_left) and position_meeting(mouse_x,mouse_y,self){	
 		var _col = make_colour_rgb(col,col,col)
 	
 		draw_sprite_ext(sprite_index,0,x,y,1,1,0,_col,1)

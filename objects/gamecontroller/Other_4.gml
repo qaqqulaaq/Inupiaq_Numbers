@@ -8,6 +8,7 @@ if room == vocab_wordbuild{
 	word_box_create();
 }
 
+
 if room == vocab_multichoice{
 	with choice1{
 		x = room_width div 3
@@ -70,9 +71,8 @@ if room == main_menu {
 	wordprogress = 0;
 	
 
-	menu_load(["Introduction","Numbers", "Vocabulary"])
 
-
+	menu_load(["Introduction","Numbers","Vocabulary"])
 	
 	//var saylist	=[ "Number Conversions", "Number Operations", "Numbers to Words", "Word Building\nVocabulary", "Multiple Choice\nVocabulary"]
 

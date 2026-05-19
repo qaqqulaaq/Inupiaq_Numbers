@@ -3,14 +3,15 @@
 function proceed(){
 	with gamecontroller{
 		
-		if room == lessons and not lessoncontroller.review{
+		if room == lessons{
 			with lessoncontroller{
 				
 				if timer < 9999 timer = 9999
 				else{
 								
-					timer = 0
+					
 					if progress < 3{
+						timer = 0
 						progress++
 						fullword = ""
 						for (var i = 0; i < array_length(word[progress]); i++){	
@@ -18,9 +19,15 @@ function proceed(){
 						}
 					}
 					
-					else{
+					else if not review{
+						timer = 0
 						review = true
 						review_setup()
+					}
+					
+					else if gamecontroller.answered{
+						gamecontroller.answered = false;
+						review_setup();
 					}
 				}
 			}

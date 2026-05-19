@@ -23,6 +23,8 @@ else if helpmode and (keyboard_check_pressed(vk_anykey) or mouse_check_button_re
 
 else if not helpmode{
 //goes to the main menu
+	if room == main_menu controls_main_menu()
+
 	if keyboard_check_pressed(vk_escape) or (position_meeting(mouse_x,mouse_y,back_button) and mouse_check_button_released(mb_left)) {
 		if room == main_menu game_end()
 		else room_goto(main_menu);
@@ -72,6 +74,7 @@ else if not helpmode{
 			if mouse_check_button_released(mb_left){
 				var _id = instance_position(mouse_x,mouse_y,choice)
 				if _id != noone{
+					answered = true
 					if _id.num == lessoncontroller.ind _id.right = 1
 					else _id.right = 2;
 				}

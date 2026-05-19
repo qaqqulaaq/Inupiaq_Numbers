@@ -3,7 +3,11 @@ draw_set_valign(fa_middle);
 draw_set_font(Words_24);
 
 
-if right == 0{
+if room == lessons and lessoncontroller.timer < 30{
+	if lessoncontroller.timer > 20 draw_sprite_part(sprite_index,0,0,0,sprite_width,min(sprite_height,(lessoncontroller.timer-20)*20),x-sprite_xoffset,y-sprite_yoffset)
+}
+
+else if right == 0{
 	if mouse_check_button(mb_left) and position_meeting(mouse_x,mouse_y,id){	
 		var _col = make_colour_rgb(col,col,col)
 	
@@ -32,8 +36,14 @@ if right == 0{
 
 else{
 	draw_self()
-	if right = 1 draw_text_color(x,y,say,c_lime,c_lime,c_lime,c_lime,1)
-	else draw_text_color(x,y,say,c_red,c_red,c_red,c_red,1)
+	if right = 1 {
+		draw_text_color(x,y,say,c_lime,c_lime,c_lime,c_lime,1)
+		draw_sprite(spr_correct,0,x+sprite_width div 2, y - sprite_height div 2)
+	}
+	else {
+		draw_text_color(x,y,say,c_red,c_red,c_red,c_red,1)
+		draw_sprite(spr_incorrect,0,x+sprite_width div 2, y - sprite_height div 2)
+	}
 }
 
 

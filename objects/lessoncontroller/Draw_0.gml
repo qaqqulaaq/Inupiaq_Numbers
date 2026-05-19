@@ -29,7 +29,6 @@ if not review{
 		var _y = room_height div 4
 	
 		draw_text(_x,_y,word[progress][i])
-	
 	}
 
 	draw_set_color(c_white)

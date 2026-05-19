@@ -15,9 +15,9 @@ if room == main_menu{
 	draw_text(room_width div 2, 96, $"I{NTIL}upiaq Numbers");	
 }
 
-else{
+else if room != overview and room != lessons{
 	draw_set_font(Words_24);
-	if level < 10 draw_text(room_width div 2 ,16,string(level));
+	if level < 10  draw_text(room_width div 2 ,16,string(level));
 	else draw_text(room_width div 2,16,"R");
 }
 

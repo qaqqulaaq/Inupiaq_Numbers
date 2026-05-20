@@ -15,7 +15,7 @@
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Controller","order":8,"path":"folders/Scripts/Controller.yy",},
     {"name":"Draw Tool","order":11,"path":"folders/Scripts/Controller/Draw Tool.yy",},
-    {"name":"General Controls","order":13,"path":"folders/Scripts/Controller/General Controls.yy",},
+    {"name":"General Controls","order":2,"path":"folders/Scripts/Numbers/General Controls.yy",},
     {"name":"Number Controls","order":12,"path":"folders/Scripts/Controller/Number Controls.yy",},
     {"name":"Vocab Controls","order":14,"path":"folders/Scripts/Controller/Vocab Controls.yy",},
     {"name":"Drawing","order":10,"path":"folders/Scripts/Drawing.yy",},
